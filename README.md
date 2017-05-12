@@ -8,27 +8,14 @@ Offered at 한국외국어대학교 Spring 2017
 
 학습 결과: AtoM과 Omeka로 만들어진 두 개의 디지털 아카이브를 갖게 됩니다.
 
-
-[Letter #1](https://github.com/tchoi8/teachingasart/blob/master/letters/letter1.md) 12/26/2016  
-
-[Letter #2](https://github.com/tchoi8/teachingasart/blob/master/letters/letter2.md) 1/6/2017 
-
-
-## Requirments
-
-Students and teacher will respect each other as equals, will speak and write kindly to each other. They will challenge each other academically and artistically.  
  
-Students will be in class, on time. Two late arrival counts as an absence, two absences will be immediately fail.
+## Week 1. OSS & Linux
 
-Students will use github repository to find the latest syllabus, reading materials as well as to submit their assignments. 
+May 13, 2017
 
-Students will submit their assignment by every Sunday morning. Late assignemnt will not be considered for review. Stuents may update their assignment after initial submission and after class. 
-
- 
-## Week 1. Learning
-
-January 23, 2017
-
+1. 오픈소스 소프트웨어 개요
+2. AWS를 이용한 클라우드 서버 구축 - Ubuntu Server 설치
+- 리눅스 명령어 실습오픈소스 소프트웨어의 개념과 특징을 이해
 Introduction of the course and the instructor's practice. Teaching philosophy.
 
 [Lecture 1. Learning](https://tchoi8.github.io/teachingasart/lecture1.html)
