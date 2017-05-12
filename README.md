@@ -14,8 +14,38 @@ Offered at 한국외국어대학교 Spring 2017
 May 13, 2017
 
 1. 오픈소스 소프트웨어 개요
-2. AWS를 이용한 클라우드 서버 구축 - Ubuntu Server 설치
-- 리눅스 명령어 실습오픈소스 소프트웨어의 개념과 특징을 이해
+
+2. AWS를 이용한 클라우드 서버 구축 
+- Ubuntu Server 설치
+- 리눅스 명령어 실습
+
+3. GitHub 
+- GitHub 소개
+- GitHub 리포지터리 만들기
+- GitHub 실습
+- 과제 안내
+
+## Week 2. AtoM 설치 및 실습
+
+May 20, 2017 (휴강)
+
+AtoM 설치 및 실습
+- AWS에 AtoM 설치하고 기록물 등록하기
+
+## Week 3. Omeka 설치 및 실습
+
+May 27, 2017
+
+Omeka 설치 및 실습
+- AWS에 Omeka 설치하고 전시 구성하기
+
+## Week 4. 과제 발표
+
+June 3, 2017
+
+자신의 GitHub에 만든 오픈소스 매뉴얼 소개하기
+
+
 Introduction of the course and the instructor's practice. Teaching philosophy.
 
 [Lecture 1. Learning](https://tchoi8.github.io/teachingasart/lecture1.html)
