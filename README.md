@@ -13,6 +13,8 @@ Offered at 한국외국어대학교 Spring 2017
 
 May 13, 2017
 
+[1강. OSS & Linux](http://osasf.net)
+
 1. 오픈소스 소프트웨어 개요
 
 2. AWS를 이용한 클라우드 서버 구축 
@@ -29,6 +31,8 @@ May 13, 2017
 
 May 20, 2017 (휴강)
 
+[2강. AtoM 설치 및 실습](http://osasf.net)
+
 AtoM 설치 및 실습
 - AWS에 AtoM 설치하고 기록물 등록하기
 
@@ -36,12 +40,14 @@ AtoM 설치 및 실습
 
 May 27, 2017
 
-Omeka 설치 및 실습
+[3강. Omeka 설치 및 실습](http://osasf.net)
 - AWS에 Omeka 설치하고 전시 구성하기
 
 ## Week 4. 과제 발표
 
 June 3, 2017
+
+[4강. 과제 발표](http://osasf.net)
 
 자신의 GitHub에 만든 오픈소스 매뉴얼 소개하기
 
@@ -194,5 +200,5 @@ Student presentation on their final project: workshop.
 
 ### Instructor information
  
-[Taeyoon Choi](http://taeyoonchoi.com) is an artist and educator based in New York and Seoul. His art practice involves performance, electronics, drawings, and storytelling that often leads to intervention in public spaces. Choi collaborates with fellow artists, activists, and professionals from other fields to realize socially engaged projects and alternative pedagogy. He was an artist-in-residence at Eyebeam Art and Technology Center and Lower Manhattan Cultural Council. He has published books about urbanism and is currently working on a book of drawings about computation. Choi cofounded the [School for Poetic Computation](http://sfpc.io) in 2013, where he continues to organize and teach. Recently, he's been focusing on unlearning the wall of disability and normalcy, and enhancing accessibility and diversity within art and technology. Choi serves on the board of advisors of the Processing Foundation. 
+[Daejin Ahn](https://www.instagram.com/djahhn/) is an artist and educator based in Seoul. Ahn founded the [archivelab](http://archivelab.co.kr) in 2016, where he continues to experiment and explore open source based archives.
  
