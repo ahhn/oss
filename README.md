@@ -1,14 +1,12 @@
-# 오픈소스 아카이브 강의
+# 오픈소스로 아카이브 만들기
  
 Offered at 한국외국어대학교 Spring 2017 
 
-이 강의는 
+이 강의는 오픈소스 소프트웨어를 이용하여 디지털 아카이브를 만들기 위한 것입니다. 기록관리 전공자, 아키비스트, 사서, 일반인 모두를 대상으로 합니다. 코딩 능력은 필요 없지만 리눅스 서버에 어플리케이션을 설치하기 위해 꽤 많은 학습이 필요합니다. 
 
-This class is for artists and creative practitioners who want to teach. A good teacher is also a great student themselves. They transform their curiosity into knowledge and share their learning process with others. One can learn to become a better teacher by staying fearless about ‘not knowing’ something, embracing radically open ideas and connecting various expertise and knowledge. Teaching can be a form of artistic and creative practice in collaboration with a diverse community. Teachers can invent new forms of learning spaces such as Artist-run schools, Hackerspaces and Museums.  
+학습 목표: 수강생들은 먼저 오픈소스 소프트웨어의 개념과 특성을 이해해야 합니다. 이후 오픈소스 소프트웨어를 이용하여 직접 자신의 디지털 아카이브를 만들어 볼 것입니다.
 
-Learning objective: In this class, students will learn about applying artistic processes to teaching. Students will read about the history of artists in and out of academic institutions, Black Mountain College as well as more recent experiments. Students are expected to engage in a critical discussion about the topic.  
-
-Learning outcome: Students will become knowledgeable about various ways of teaching. Students will create a lesson plan for a workshop. 
+학습 결과: AtoM과 Omeka로 만들어진 두 개의 디지털 아카이브를 갖게 됩니다.
 
 
 [Letter #1](https://github.com/tchoi8/teachingasart/blob/master/letters/letter1.md) 12/26/2016  
