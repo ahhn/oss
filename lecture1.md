@@ -31,20 +31,19 @@
 
 - [AtoM 설치](https://github.com/ahhn/AtoM_UserManual_kor/blob/master/AtoM%20%E1%84%89%E1%85%A5%E1%86%AF%E1%84%8E%E1%85%B5%20%E1%84%86%E1%85%B5%E1%86%BE%20%E1%84%92%E1%85%AA%E1%86%AB%E1%84%80%E1%85%A7%E1%86%BC%E1%84%89%E1%85%A5%E1%86%AF%E1%84%8C%E1%85%A5%E1%86%BC(%E1%84%8B%E1%85%A1%E1%84%8F%E1%85%A1%E1%84%8B%E1%85%B5%E1%84%87%E1%85%B3%E1%84%85%E1%85%A2%E1%86%B8-%E1%84%8B%E1%85%A9%E1%84%91%E1%85%B3%E1%86%AB%E1%84%89%E1%85%A9%E1%84%89%E1%85%B3%E1%84%8B%E1%85%A7%E1%86%AB%E1%84%80%E1%85%AE-20170430)(%E1%84%87%E1%85%A2%E1%84%91%E1%85%A9%E1%84%8B%E1%85%AD%E1%86%BC)(mpm-event%E1%84%8B%E1%85%AA%20php5-fpm%E1%84%87%E1%85%A5%E1%84%8C%E1%85%A7%E1%86%AB%E1%84%8B%E1%85%AD%E1%86%BC).pdf)
 
-[- Omeka 설치](http://osasf.net/uploads/FileUpload/dc/35fc351c736a808dde5c9bff895dd8.pdf)
+- [Omeka 설치](http://osasf.net/uploads/FileUpload/dc/35fc351c736a808dde5c9bff895dd8.pdf)
 
-[- AWS EC2 웹서버에 아카이브 만들기](https://github.com/ahhn/oss/blob/master/resources/AWS_v1.7.pdf)
+- [AWS EC2 웹서버에 아카이브 만들기](https://github.com/ahhn/oss/blob/master/resources/AWS_v1.7.pdf)
 
-[- ]()
 
 
 ## 3. GitHub 
 
-[- GitHub 소개](https://github.com/)
+- [GitHub 소개](https://github.com/)
 
-[- GitHub 리포지터리 만들기
+- [GitHub 리포지터리 만들기]
 
-[- GitHub 실습
+- [GitHub 실습]
 
 
 ## 4. 과제 안내
