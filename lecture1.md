@@ -3,7 +3,7 @@
 **May 13, 2017**
 
 
-1. 오픈소스 소프트웨어 개요
+## 1. 오픈소스 소프트웨어 개요
 
 [- 1/3](https://github.com/ahhn/oss/blob/master/resources/OSS1.pdf)
 
@@ -11,9 +11,9 @@
 
 [- 3/3](https://github.com/ahhn/oss/blob/master/resources/OSS3.pdf)
 
-2. AWS를 이용한 클라우드 서버 구축 
+## 2. AWS를 이용한 클라우드 서버 구축 
 
-Youtube 영상
+### Youtube 영상
 [- AWS EC2 계정 만들기](https://www.youtube.com/watch?v=sQSQCqihygc&list=PLya-3fVEf50Zj0bfFbkRpxuwO6J9mh4Pf&index=5)
 
 [- AWS EC2 우분투 서버 설치하고 세팅하기](https://www.youtube.com/watch?v=DcnQeLfg7gM&list=PLya-3fVEf50Zj0bfFbkRpxuwO6J9mh4Pf&index=4)
@@ -27,7 +27,7 @@ Youtube 영상
 [- Omeka 설치하기](https://www.youtube.com/watch?v=4HUJtZNPtlQ&index=1&list=PLya-3fVEf50Zj0bfFbkRpxuwO6J9mh4Pf)
 
 
-매뉴얼
+### 매뉴얼
 
 [- AtoM 설치](https://github.com/ahhn/AtoM_UserManual_kor/blob/master/AtoM%20%E1%84%89%E1%85%A5%E1%86%AF%E1%84%8E%E1%85%B5%20%E1%84%86%E1%85%B5%E1%86%BE%20%E1%84%92%E1%85%AA%E1%86%AB%E1%84%80%E1%85%A7%E1%86%BC%E1%84%89%E1%85%A5%E1%86%AF%E1%84%8C%E1%85%A5%E1%86%BC(%E1%84%8B%E1%85%A1%E1%84%8F%E1%85%A1%E1%84%8B%E1%85%B5%E1%84%87%E1%85%B3%E1%84%85%E1%85%A2%E1%86%B8-%E1%84%8B%E1%85%A9%E1%84%91%E1%85%B3%E1%86%AB%E1%84%89%E1%85%A9%E1%84%89%E1%85%B3%E1%84%8B%E1%85%A7%E1%86%AB%E1%84%80%E1%85%AE-20170430)(%E1%84%87%E1%85%A2%E1%84%91%E1%85%A9%E1%84%8B%E1%85%AD%E1%86%BC)(mpm-event%E1%84%8B%E1%85%AA%20php5-fpm%E1%84%87%E1%85%A5%E1%84%8C%E1%85%A7%E1%86%AB%E1%84%8B%E1%85%AD%E1%86%BC).pdf)
 
@@ -38,7 +38,7 @@ Youtube 영상
 [- ]()
 
 
-3. GitHub 
+## 3. GitHub 
 
 [- GitHub 소개](https://github.com/)
 
@@ -47,9 +47,10 @@ Youtube 영상
 [- GitHub 실습
 
 
-4. 과제 안내
+## 4. 과제 안내
 
 [- 과제 안내]
+
 
 
 ### Markdown 소개 (OOO.md 파일)
