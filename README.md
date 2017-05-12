@@ -13,7 +13,7 @@ Offered at 한국외국어대학교 Spring 2017
 
 May 13, 2017
 
-[1강. OSS & Linux](http://osasf.net)
+[1강. OSS & Linux](https://ahhn.github.io/oss/lecture1)
 
 1. 오픈소스 소프트웨어 개요
 
@@ -31,7 +31,7 @@ May 13, 2017
 
 May 20, 2017 (휴강)
 
-[2강. AtoM 설치 및 실습](http://osasf.net)
+[2강. AtoM 설치 및 실습](https://ahhn.github.io/oss/lecture2)
 
 AtoM 설치 및 실습
 - AWS에 AtoM 설치하고 기록물 등록하기
@@ -40,14 +40,14 @@ AtoM 설치 및 실습
 
 May 27, 2017
 
-[3강. Omeka 설치 및 실습](http://osasf.net)
+[3강. Omeka 설치 및 실습](https://ahhn.github.io/oss/lecture3)
 - AWS에 Omeka 설치하고 전시 구성하기
 
 ## Week 4. 과제 발표
 
 June 3, 2017
 
-[4강. 과제 발표](http://osasf.net)
+[4강. 과제 발표](https://ahhn.github.io/oss/lecture4)
 
 자신의 GitHub에 만든 오픈소스 매뉴얼 소개하기
 
