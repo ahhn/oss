@@ -143,6 +143,6 @@ Syntax highlighted code block
 
 ## 참고 링크
 
-- AtoM - http://accesstomemory.org
-- Omeka - http://omeka.org
-- OSASF(기록관리 공개소프트웨어 포럼) - http://osasf.net
+- AtoM - [http://accesstomemory.org](http://accesstomemory.org)
+- Omeka - [http://omeka.org](http://omeka.org)
+- OSASF(기록관리 공개소프트웨어 포럼) - [http://osasf.net](http://osasf.net)
