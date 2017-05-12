@@ -1,7 +1,3 @@
-# Lecture 
+# 2강. AtoM 설치 및 실습
 
-AtoM & Linux
-
-- 1
-- 2
-- 3
+준비 중
