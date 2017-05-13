@@ -7,18 +7,14 @@
 
 오픈소스 소프트웨어 개념과 구축사례
 - [1/3](https://github.com/ahhn/oss/blob/master/resources/OSS1.pdf)
-
 - [2/3](https://github.com/ahhn/oss/blob/master/resources/OSS2.pdf)
-
 - [3/3](https://github.com/ahhn/oss/blob/master/resources/OSS3.pdf)
 
 
 인공지능 오픈소스 써 보기
 
 - [Google Cloud Natural Language API](https://cloud.google.com/natural-language/)
-
 - [IBM Watson Natural Language Understanding](https://natural-language-understanding-demo.mybluemix.net/)
-
 - [IBM Watson Vision Recognition](https://visual-recognition-demo.mybluemix.net/)
 
 
