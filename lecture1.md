@@ -200,4 +200,4 @@ Syntax highlighted code block
 - [AtoM User's Group]()
 - [Omeka Forum]()
 - [Curatescape Forum]()
-- [OSASF(기록관리 공개소프트웨어 포럼)](http://osasf.net](http://osasf.net)
+- [기록관리 공개소프트웨어 포럼](http://osasf.net](http://osasf.net)
