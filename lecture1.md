@@ -147,7 +147,7 @@ Syntax highlighted code block
 
 
 ## 참고 링크
-###OSS 프로젝트###
+### OSS 프로젝트
 - ICA-AtoM - [https://www.ica-atom.org/](https://www.ica-atom.org/)
 - AtoM - [http://accesstomemory.org](http://accesstomemory.org)
 - Omeka - [http://omeka.org](http://omeka.org)
@@ -161,7 +161,7 @@ Syntax highlighted code block
 - Binder - [https://binder.readthedocs.io/en/latest/contents.html](https://binder.readthedocs.io/en/latest/contents.html)
 - DPSP (Digital Preservation Software Platform) - [http://dpsp.sourceforge.net/](http://dpsp.sourceforge.net/)
 
-###AtoM 구축사례###
+### AtoM 구축사례
 - [AtoM 구축사례 목록](https://wiki.ica-atom.org/ICA-AtoM_users)
 - [UNESCO Archives AtoM Catalogue](https://atom.archives.unesco.org/)
 - [World Bank Group Archives Holdings](https://archivesholdings.worldbank.org/)
@@ -172,7 +172,7 @@ Syntax highlighted code block
 - [인간과기억아카이브](http://hmarchives.org/)
 - 국립문화재연구소 연구관리시스템
 
-###Omeka 구축사례###
+### Omeka 구축사례
 
 **국내**
 - [부산대학교 로컬리티아카이브](http://localityarchives.org/)
@@ -203,13 +203,13 @@ Syntax highlighted code block
 - [Histories of the National Mall](http://mallhistory.org/)
 - [Cleveland Voices](https://clevelandvoices.org/)
 
-###Curatescape 구축사례###
+### Curatescape 구축사례
 - [Curatescape 구축사례 목록](https://curatescape.org/projects/)
 - [Cleveland Historical](https://clevelandhistorical.org/)
 - [동대문구 기억여행](http://dgo.osasf.net/)
 
 
-###오픈소스 커뮤니티###
+### 오픈소스 커뮤니티
 - [AtoM User's Group](https://groups.google.com/forum/#!forum/ica-atom-users)
 - [Omeka Forum](https://forum.omeka.org/)
 - [Archivematica User Forum](https://groups.google.com/forum/?fromgroups#!forum/archivematica)
