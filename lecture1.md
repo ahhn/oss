@@ -74,7 +74,7 @@
 
 ## 3. GitHub 
 
-- [GitHub 소개](https://github.com/ahhn/oss)
+- [GitHub 소개](https://guides.github.com/activities/hello-world/)
 
 - [GitHub 사이트](https://github.com/)
 
