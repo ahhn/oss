@@ -1,4 +1,4 @@
-# Week 1. OSS & Linux
+# Week 1. OSS & AWS & GitHub
 
 **May 13, 2017**
 
