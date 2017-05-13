@@ -181,6 +181,7 @@ Syntax highlighted code block
 - [성공회대학교 대한마이크로노동조합 아카이브](http://micro.osasf.net/)
 - [세월호인양의 모든것](http://time.416family.org/)
 - [인간과기억아카이브](http://hmarchives.org/omeka/exhibits)
+- [이우학교 아카이브](http://memory.2woo.net/)
 - 서울시 북부교육청 교육역사전시관
 - 기획재정부 연혁정보관리시스템
 - 인천대학교 인천학연구원 아카이브
