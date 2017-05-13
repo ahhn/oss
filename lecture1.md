@@ -147,7 +147,7 @@ Syntax highlighted code block
 
 
 ## 참고 링크
-**아카이브 소프트웨어 OSS 프로젝트**
+** OSS 프로젝트**
 - ICA-AtoM - [https://www.ica-atom.org/](https://www.ica-atom.org/)
 - AtoM - [http://accesstomemory.org](http://accesstomemory.org)
 - Omeka - [http://omeka.org](http://omeka.org)
