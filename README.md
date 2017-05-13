@@ -18,11 +18,13 @@ May 13, 2017
 - 오픈소스 소프트웨어(OSS) 개요
 
 - AWS를 이용한 클라우드 서버 구축
+
 -- Ubuntu Server 설치
 -- SSH Client(Putty) 설치
 -- 리눅스 명령어 실습
 
 - GitHub
+
 -- GitHub 소개
 -- GitHub 리포지터리 만들기
 -- GitHub 실습
