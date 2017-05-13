@@ -9,7 +9,7 @@ Offered at 한국외국어대학교 Spring 2017
 학습 결과: AtoM과 Omeka로 만들어진 두 개의 디지털 아카이브를 갖게 됩니다.
 
  
-## Week 1. OSS & Linux
+## Week 1. OSS & AWS & GitHub
 
 May 13, 2017
 
@@ -19,6 +19,7 @@ May 13, 2017
 
 2. AWS를 이용한 클라우드 서버 구축 
 - Ubuntu Server 설치
+- SSH Client(Putty) 설치
 - 리눅스 명령어 실습
 
 3. GitHub 
