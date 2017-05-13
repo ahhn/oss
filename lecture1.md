@@ -46,15 +46,10 @@
 
 ### Youtube 영상
 - [AWS EC2 계정 만들기](https://www.youtube.com/watch?v=sQSQCqihygc&list=PLya-3fVEf50Zj0bfFbkRpxuwO6J9mh4Pf&index=5)
-
 - [AWS EC2 우분투 서버 설치하고 세팅하기](https://www.youtube.com/watch?v=DcnQeLfg7gM&list=PLya-3fVEf50Zj0bfFbkRpxuwO6J9mh4Pf&index=4)
-
 - [AWS EC2 우분투 서버 루트관리자 계정 만들기](https://www.youtube.com/watch?v=qhAM79x0SvQ&index=3&list=PLya-3fVEf50Zj0bfFbkRpxuwO6J9mh4Pf)
-
 - [APM 구동원리, 설치 및 환경설정하기](https://www.youtube.com/watch?v=r5Fy8N3-WDs&index=2&list=PLya-3fVEf50Zj0bfFbkRpxuwO6J9mh4Pf)
-
 - [AtoM 설치하기](https://www.youtube.com/watch?v=eaw7rN_O6LM&list=PLya-3fVEf50Zj0bfFbkRpxuwO6J9mh4Pf&index=6)
-
 - [Omeka 설치하기](https://www.youtube.com/watch?v=4HUJtZNPtlQ&index=1&list=PLya-3fVEf50Zj0bfFbkRpxuwO6J9mh4Pf)
 
 
