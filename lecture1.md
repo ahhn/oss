@@ -162,10 +162,13 @@ Syntax highlighted code block
 - DPSP (Digital Preservation Software Platform) - [http://dpsp.sourceforge.net/](http://dpsp.sourceforge.net/)
 
 **AtoM 구축사례**
+- [AtoM 구축사례 목록](https://wiki.ica-atom.org/ICA-AtoM_users)
 - [UNESCO Archives AtoM Catalogue](https://atom.archives.unesco.org/)
 - [World Bank Group Archives Holdings](https://archivesholdings.worldbank.org/)
 - [JMABC (Jewish Museum & Archives of BC)](https://archives.jewishmuseum.ca/)
+- [City of Vancouver Archives](http://searcharchives.vancouver.ca/)
 - [MemoryBC](https://www.memorybc.ca/)
+- [Archeion](https://www.archeion.ca/)
 - [인간과기억아카이브](http://hmarchives.org/)
 - 국립문화재연구소 연구관리시스템
 
@@ -173,14 +176,20 @@ Syntax highlighted code block
 
 국내
 - [부산대학교 로컬리티아카이브](http://localityarchives.org/)
-- 기획재정부 연혁정보관리시스템
-- 인천대학교 인천학연구원 아카이브
 - [한국여성의전화 여성인권운동아카이브 문](http://herstory.xyz/)
 - [김세진이재호기억저장소](http://snu.osasf.net/)
-- 서울시 북부교육청 교육역사전시관
 - [성공회대학교 대한마이크로노동조합 아카이브](http://micro.osasf.net/)
+- [세월호인양의 모든것](http://time.416family.org/)
+- [인간과기억아카이브](http://hmarchives.org/omeka/exhibits)
+- 서울시 북부교육청 교육역사전시관
+- 기획재정부 연혁정보관리시스템
+- 인천대학교 인천학연구원 아카이브
+- 광명시 평생학습아카이브
+- 동물보호시민단체 카라(진행중)
+- 공주학연구원(진행중)
 
 해외
+- [Omeka 구축사례 목록](https://omeka.org/codex/Sites_Using_Omeka)
 - [Occupy Archive](http://occupyarchive.org/)
 - [Our Marathon](http://marathon.neu.edu/)
 - [Bracero History Archives](http://braceroarchive.org/)
@@ -191,6 +200,7 @@ Syntax highlighted code block
 - [Human Computers at NASA](http://omeka.macalester.edu/humancomputerproject/)
 - [DPLA](http://dp.la)
 - [Histories of the National Mall](http://mallhistory.org/)
+- [Cleveland Voices](https://clevelandvoices.org/)
 
 **Curatescape 구축사례**
 - [동대문구 기억여행](http://dgo.osasf.net/)
