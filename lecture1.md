@@ -100,9 +100,15 @@
 
 - README.md 파일 수정하기
 
+- 폴더 만들고 Info.md 파일 만들기
+
+- 폴더에 파일 업로드
+
 - [GitHub 페이지 만들기](https://pages.github.com/)
 
-- [GitHub 실습]
+- [GitHub Wiki 만들기](https://help.github.com/articles/about-github-wikis/#)
+
+- GitHub 실습 - md파일 만들기
 
 
 ## 4. 과제 안내
