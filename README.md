@@ -34,7 +34,6 @@ May 20, 2017 (휴강)
 
 [2강. AtoM 설치 및 실습](https://ahhn.github.io/oss/lecture2)
 
-AtoM 설치 및 실습
 - AWS에 AtoM 설치하고 기록물 등록하기
 
 ## Week 3. Omeka 설치 및 실습
@@ -50,7 +49,7 @@ June 3, 2017
 
 [4강. 과제 발표](https://ahhn.github.io/oss/lecture4)
 
-자신의 GitHub에 만든 오픈소스 매뉴얼 소개하기
+- 자신의 GitHub에 만든 오픈소스 매뉴얼 소개하기
 
 ## Further Reading
 
