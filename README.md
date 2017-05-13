@@ -15,20 +15,18 @@ May 13, 2017
 
 [1강. OSS & AWS & GitHub](https://ahhn.github.io/oss/lecture1)
 
-- 오픈소스 소프트웨어(OSS) 개요
+오픈소스 소프트웨어(OSS) 개요
 
-- AWS를 이용한 클라우드 서버 구축
+AWS를 이용한 클라우드 서버 구축
+- Ubuntu Server 설치
+- SSH Client(Putty) 설치
+- 리눅스 명령어 실습
 
--- Ubuntu Server 설치
--- SSH Client(Putty) 설치
--- 리눅스 명령어 실습
-
-- GitHub
-
--- GitHub 소개
--- GitHub 리포지터리 만들기
--- GitHub 실습
--- 과제 안내
+GitHub
+- GitHub 소개
+- GitHub 리포지터리 만들기
+- GitHub 실습
+- 과제 안내
 
 ## Week 2. AtoM 설치 및 실습
 
