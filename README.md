@@ -52,7 +52,14 @@ June 3, 2017
 
 자신의 GitHub에 만든 오픈소스 매뉴얼 소개하기
 
+## 읽을 거리
+- [안대진, 김익한. (2015). AtoM 시스템의 구축과 커스터마이징 방법에 관한 연구. 기록학연구, (45), 5-50.]()http://www.dbpia.co.kr/Journal/ArticleDetail/NODE06391835?TotalCount=2&Seq=2&q=%5B%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4%C2%A7coldb%C2%A72%C2%A751%C2%A73%5D%20AND%20%5B%EC%95%88%EB%8C%80%EC%A7%84%C2%A7coldb%C2%A77%C2%A726%C2%A73%5D&searchWord=%EC%A0%84%EC%B2%B4%3D%5E%24%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4%5E*%20and%20%EC%A0%80%EC%9E%90%EB%AA%85%3D%5E%24%EC%95%88%EB%8C%80%EC%A7%84%5E*&Multimedia=0&isIdentifyAuthor=0&Collection=0&SearchAll=%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4&SearchAuthor=%EC%95%88%EB%8C%80%EC%A7%84&isFullText=0&specificParam=0&SearchMethod=0&Sort=1&SortType=desc&Page=1&PageSize=20
 
+- [안대진, 임진희. (2016). 디지털 아카이브 시스템 구축을 위한 공개 소프트웨어 활용방안 연구. 정보관리학회지, 33(3), 345-370.](http://www.dbpia.co.kr/Journal/ArticleDetail/NODE07016659?TotalCount=2&Seq=1&q=%5B%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4%C2%A7coldb%C2%A72%C2%A751%C2%A73%5D%20AND%20%5B%EC%95%88%EB%8C%80%EC%A7%84%C2%A7coldb%C2%A77%C2%A726%C2%A73%5D&searchWord=%EC%A0%84%EC%B2%B4%3D%5E%24%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4%5E*%20and%20%EC%A0%80%EC%9E%90%EB%AA%85%3D%5E%24%EC%95%88%EB%8C%80%EC%A7%84%5E*&Multimedia=0&isIdentifyAuthor=0&Collection=0&SearchAll=%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4&SearchAuthor=%EC%95%88%EB%8C%80%EC%A7%84&isFullText=0&specificParam=0&SearchMethod=0&Sort=1&SortType=desc&Page=1&PageSize=20)
+
+- [안대진. (2016). 기록시스템 오픈소스화 모델. 한국기록관리학회 학술발표논문집, , 106-111.](http://www.dbpia.co.kr/Journal/ArticleDetail/NODE07025771?TotalCount=2&Seq=1&q=%5B%EC%98%A4%ED%94%88%EC%86%8C%EC%8A%A4%C2%A7coldb%C2%A72%C2%A751%C2%A73%5D%20AND%20%5B%EC%95%88%EB%8C%80%EC%A7%84%C2%A7coldb%C2%A77%C2%A726%C2%A73%5D&searchWord=%EC%A0%84%EC%B2%B4%3D%5E%24%EC%98%A4%ED%94%88%EC%86%8C%EC%8A%A4%5E*%20and%20%EC%A0%80%EC%9E%90%EB%AA%85%3D%5E%24%EC%95%88%EB%8C%80%EC%A7%84%5E*&Multimedia=0&isIdentifyAuthor=0&Collection=0&SearchAll=%EC%98%A4%ED%94%88%EC%86%8C%EC%8A%A4&SearchAuthor=%EC%95%88%EB%8C%80%EC%A7%84&isFullText=0&specificParam=0&SearchMethod=0&Sort=1&SortType=desc&Page=1&PageSize=20)
+
+- [안대진, 임진희. (2017). 기록시스템의 오픈소스화 전략 연구. 기록학연구, 52(3), 119-170.]()
 
 ### Instructor information
  
