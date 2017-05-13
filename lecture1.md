@@ -76,7 +76,7 @@
 
 오픈소스 리포지터리 만들기
 
-- [GitHub 소개](https://guides.github.com/activities/hello-world/)
+- GitHub 소개 [영문](https://guides.github.com/activities/hello-world/), [한글1](http://icoder.tistory.com/entry/GitHub-Guides-Hello-World), [한글2](http://guruble.com/?p=116)
 
 - [GitHub 사이트](https://github.com/)
 
@@ -160,4 +160,5 @@ Syntax highlighted code block
 
 - AtoM - [http://accesstomemory.org](http://accesstomemory.org)
 - Omeka - [http://omeka.org](http://omeka.org)
+- Curatescape - [https://curatescape.org/](https://curatescape.org/)
 - OSASF(기록관리 공개소프트웨어 포럼) - [http://osasf.net](http://osasf.net)
