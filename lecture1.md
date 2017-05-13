@@ -147,8 +147,50 @@ Syntax highlighted code block
 
 
 ## 참고 링크
-
+**기록관리 분야 OSS 프로젝트**
 - AtoM - [http://accesstomemory.org](http://accesstomemory.org)
 - Omeka - [http://omeka.org](http://omeka.org)
 - Curatescape - [https://curatescape.org/](https://curatescape.org/)
-- OSASF(기록관리 공개소프트웨어 포럼) - [http://osasf.net](http://osasf.net)
+
+**AtoM 구축사례**
+- [UNESCO Archives AtoM Catalogue](https://atom.archives.unesco.org/)
+- [World Bank Group Archives Holdings](https://archivesholdings.worldbank.org/)
+- [JMABC (Jewish Museum & Archives of BC)](https://archives.jewishmuseum.ca/)
+- 국립문화재연구소 연구관리시스템
+- [인간과기억아카이브](http://hmarchives.org/)
+
+**Omeka 구축사례**
+국내
+- [부산대학교 로컬리티아카이브](http://localityarchives.org/)
+- 기획재정부 연혁정보관리시스템
+- 인천대학교 인천학연구원 아카이브
+- [한국여성의전화 여성인권운동아카이브 문](http://herstory.xyz/)
+- [김세진이재호기억저장소](http://snu.osasf.net/)
+- 서울시 북부교육청 교육역사전시관
+- [성공회대학교 대한마이크로노동조합 아카이브](http://micro.osasf.net/)
+해외
+- [Occupy Archive](http://occupyarchive.org/)
+- [Our Marathon](http://marathon.neu.edu/)
+- [Bracero History Archives](http://braceroarchive.org/)
+- [Documenting FERGUSON](http://braceroarchive.org/)
+- [Baltimore Uprising 2015](http://baltimoreuprising2015.org/)
+- []()
+- []()
+
+**Curatescape 구축사례**
+- [동대문구 기억여행](http://dgo.osasf.net/)
+- []()
+- []()
+- []()
+- []()
+- []()
+- []()
+- []()
+- []()
+- []()
+
+오픈소스 커뮤니티
+- [AtoM User's Group]()
+- [Omeka Forum]()
+- [Curatescape Forum]()
+- [OSASF(기록관리 공개소프트웨어 포럼)](http://osasf.net](http://osasf.net)
