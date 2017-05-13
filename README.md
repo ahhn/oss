@@ -13,9 +13,9 @@ Offered at 한국외국어대학교 Spring 2017
 
 May 13, 2017
 
-[1강. OSS & Linux](https://ahhn.github.io/oss/lecture1)
+[1강. OSS & AWS & GitHub](https://ahhn.github.io/oss/lecture1)
 
-1. 오픈소스 소프트웨어 개요
+1. 오픈소스 소프트웨어(OSS) 개요
 
 2. AWS를 이용한 클라우드 서버 구축 
 - Ubuntu Server 설치
