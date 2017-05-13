@@ -74,6 +74,8 @@
 
 ## 3. GitHub 
 
+오픈소스 리포지터리 만들기
+
 - [GitHub 소개](https://guides.github.com/activities/hello-world/)
 
 - [GitHub 사이트](https://github.com/)
@@ -84,21 +86,28 @@
 
 - 리포지터리 만들기
 
+- OSS 라이선스 선택하기
+
 - README.md 파일 수정하기
+
+
+오픈소스 프로젝트 찾기
 
 - 오픈소스 프로젝트 찾아보기
 
 - 오픈소스 프로젝트 라이선스, 개발언어, 인기도 확인하기
 
+소스코드 변경하기
+
 - 소스코드 가져오기(Fork)
 
 - 소스코드 수정하기
 
-- 소스코드 
+- 소스코드 커밋(Commit)하기
 
 - 오픈소스 프로젝트에 반영 요청하기(Pull request)
 
-- README.md 파일 수정하기
+오픈소스 프로젝트 설명하기
 
 - 폴더 만들고 Info.md 파일 만들기
 
