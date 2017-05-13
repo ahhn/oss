@@ -156,6 +156,7 @@ Syntax highlighted code block
 - [UNESCO Archives AtoM Catalogue](https://atom.archives.unesco.org/)
 - [World Bank Group Archives Holdings](https://archivesholdings.worldbank.org/)
 - [JMABC (Jewish Museum & Archives of BC)](https://archives.jewishmuseum.ca/)
+- [MemoryBC](https://www.memorybc.ca/)
 - 국립문화재연구소 연구관리시스템
 - [인간과기억아카이브](http://hmarchives.org/)
 
@@ -174,20 +175,14 @@ Syntax highlighted code block
 - [Bracero History Archives](http://braceroarchive.org/)
 - [Documenting FERGUSON](http://braceroarchive.org/)
 - [Baltimore Uprising 2015](http://baltimoreuprising2015.org/)
-- []()
-- []()
+- [Wearing Gay History](Wearing Gay History)
+- [MORE](http://moremuseum.org/omeka/)
+- [Human Computers at NASA](http://omeka.macalester.edu/humancomputerproject/)
+- [DPLA](http://dp.la)
 
 **Curatescape 구축사례**
 - [동대문구 기억여행](http://dgo.osasf.net/)
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
+- [Cleveland Historical](https://clevelandhistorical.org/)
 
 오픈소스 커뮤니티
 - [AtoM User's Group]()
