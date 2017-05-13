@@ -203,11 +203,14 @@ Syntax highlighted code block
 - [Cleveland Voices](https://clevelandvoices.org/)
 
 **Curatescape 구축사례**
-- [동대문구 기억여행](http://dgo.osasf.net/)
+- [Curatescape 구축사례 목록](https://curatescape.org/projects/)
 - [Cleveland Historical](https://clevelandhistorical.org/)
+- [동대문구 기억여행](http://dgo.osasf.net/)
+
 
 **오픈소스 커뮤니티**
 - [AtoM User's Group]()
 - [Omeka Forum]()
+- [Archivematica User Forum](https://groups.google.com/forum/?fromgroups#!forum/archivematica)
 - [Curatescape Forum]()
 - [기록관리 공개소프트웨어 포럼](http://osasf.net](http://osasf.net)
