@@ -209,11 +209,11 @@ Syntax highlighted code block
 
 
 ###오픈소스 커뮤니티###
-- [AtoM User's Group]()
-- [Omeka Forum]()
+- [AtoM User's Group](https://groups.google.com/forum/#!forum/ica-atom-users)
+- [Omeka Forum](https://forum.omeka.org/)
 - [Archivematica User Forum](https://groups.google.com/forum/?fromgroups#!forum/archivematica)
-- [Curatescape Forum]()
-- [기록관리 공개소프트웨어 포럼](http://osasf.net](http://osasf.net)
+- [Curatescape Forum](https://forum.omeka.org/t/curatescape-forum/2669)
+- [기록관리 공개소프트웨어 포럼](http://osasf.net)
 
 
 
