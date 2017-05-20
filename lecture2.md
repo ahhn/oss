@@ -14,38 +14,45 @@ OS : Ubuntu server 14.04 LTS
 
 ### 1.2. root 계정 설정
 - root 계정 비밀번호 설정
+
 `sudo passwd root`
 
 - 새 비밀번호 입력(2회, 패스워드를 입력할 땐 화면에 패스워드가 출력되진 않지만 비밀번호가 입력된 것임)
 
 - root계정으로 로그인(명령어 사이에 공백 유의)
+
 `su -`
 
 - 기설정한 비밀번호 입력하여 로그인
 
 
 ### 1.3. Ubuntu 업데이트
--리눅스 Ubuntu 업데이트
+- 리눅스 Ubuntu 업데이트
+
 `sudo apt-get update`
 
 `sudo apt-get upgrade`
 
--Nano 에디터 설치
+- Nano 에디터 설치
+
 `sudo apt-get install nano`
 
 
 ### 1.4. 각종 어플리케이션 설치
--MySQL 설치
+- MySQL 설치
+
 `sudo apt-get install mysql-server-5.5`
 
--Java 설치
+- Java 설치
+
 `sudo add-apt-repository ppa:webupd8team/java`
 
 `sudo apt-get update`
 
 `sudo apt-get install oracle-java8-installer`
 
--ElasticSearch 설치
+- ElasticSearch 설치
+
 `wget -qO - http://packages.elasticsearch.org/GPG-KEY-elasticsearch | sudo apt-key add -`
 
 `sudo nano /etc/apt/sources.list`
@@ -53,39 +60,43 @@ OS : Ubuntu server 14.04 LTS
 `deb http://packages.elasticsearch.org/elasticsearch/1.7/debian stable main`
 
 
--업데이트 및 Elasticsearch 설치
-sudo apt-get update
+- 업데이트 및 Elasticsearch 설치
+`sudo apt-get update`
 
-sudo apt-get install elasticsearch
+`sudo apt-get install elasticsearch`
 
--시스템 부팅 시 Elasticsearch 자동실행 설정
-sudo update-rc.d elasticsearch defaults 95 10
+- 시스템 부팅 시 Elasticsearch 자동실행 설정
+`sudo update-rc.d elasticsearch defaults 95 10`
 
-sudo /etc/init.d/elasticsearch start
-
-
--웹서버 설치 (NGINX)
-sudo apt-get install nginx
-
-sudo add-apt-repository ppa:nginx/stable
-
-sudo apt-get update
-
-sudo apt-get install nginx
+`sudo /etc/init.d/elasticsearch start`
 
 
--기본서버 설정
-sudo touch /etc/nginx/sites-available/atom
+- 웹서버 설치 (NGINX)
 
-sudo ln -sf /etc/nginx/sites-available/atom /etc/nginx/sites-enabled/atom
+`sudo apt-get install nginx`
 
-sudo rm /etc/nginx/sites-enabled/default
+`sudo add-apt-repository ppa:nginx/stable`
 
-sudo nano /etc/nginx/sites-enabled/atom
+`sudo apt-get update`
 
-----------------------------------------------> 빈 화면이 나타나면 아래 upstream atom {부터
+`sudo apt-get install nginx`
 
 
+- 기본서버 설정
+
+`sudo touch /etc/nginx/sites-available/atom`
+
+`sudo ln -sf /etc/nginx/sites-available/atom /etc/nginx/sites-enabled/atom`
+
+`sudo rm /etc/nginx/sites-enabled/default`
+
+`sudo nano /etc/nginx/sites-enabled/atom`
+
+
+빈 화면이 나타나면 아래 upstream atom {부터 복사하여 붙여넣기
+
+
+`
 upstream atom {
   server unix:/var/run/php5-fpm.atom.sock;
 }
@@ -153,7 +164,8 @@ server {
 
 }
 
---------------------------------------------------------> } 까지 복사해서 입력
+`
+
 
 ctrl+O (저장)
 ctrl+X (문서닫기)
@@ -162,19 +174,20 @@ ctrl+X (문서닫기)
 
 
 
--Nginx 재시작
-sudo service nginx restart
+- Nginx 재시작
 
--PHP 설치
-sudo apt-get install php5-cli php5-fpm php5-curl php5-mysql php5-xsl php5-json php5-ldap php-apc
+`sudo service nginx restart`
 
-sudo apt-get install php5-readline
+- PHP 설치
+`sudo apt-get install php5-cli php5-fpm php5-curl php5-mysql php5-xsl php5-json php5-ldap php-apc`
+
+`sudo apt-get install php5-readline`
+
+`sudo nano /etc/php5/fpm/pool.d/atom.conf`
 
 
-sudo nano /etc/php5/fpm/pool.d/atom.conf
+빈 화면이 나타나면 [atom] 서부터 "off"까지 복사하여 붙여넣기
 
-
------------------------------------------------------> 빈 화면이 나타나면 [atom] 서부터
 `
 [atom]
 
@@ -246,63 +259,69 @@ ctrl+X (문서닫기)
 
 
 
--프로세스 관리자 재시작
-sudo service php5-fpm restart
+- 프로세스 관리자 재시작
 
--PHP 실행 테스트
-sudo php5-fpm --test
+`sudo service php5-fpm restart`
 
--Gearman 잡서버 설치
-sudo apt-get install gearman-job-server
+- PHP 실행 테스트
 
--Apache FOP 설치 (아래 내용을 반드시 1줄씩 입력하세요)
-sudo -s
+`sudo php5-fpm --test`
 
-wget https://archive.apache.org/dist/xmlgraphics/fop/binaries/fop-2.1-bin.tar.gz
+- Gearman 잡서버 설치
 
-tar -zxvf fop-2.1-bin.tar.gz
+`sudo apt-get install gearman-job-server`
 
-rm fop-2.1-bin.tar.gz
+- Apache FOP 설치 (아래 내용을 반드시 1줄씩 입력하세요)
 
-mv fop-2.1 /usr/share
+`sudo -s`
 
-ln -s /usr/share/fop-2.1/fop /usr/bin/fop
+`wget https://archive.apache.org/dist/xmlgraphics/fop/binaries/fop-2.1-bin.tar.gz`
 
-echo 'FOP_HOME="/usr/share/fop-2.1"' >> /etc/environment
+`tar -zxvf fop-2.1-bin.tar.gz`
 
-exit
+`rm fop-2.1-bin.tar.gz`
+
+`mv fop-2.1 /usr/share`
+
+`ln -s /usr/share/fop-2.1/fop /usr/bin/fop`
+
+`echo 'FOP_HOME="/usr/share/fop-2.1"' >> /etc/environment`
+
+`exit`
 
 
--ImageMagick 설치
-sudo apt-get install imagemagick ghostscript poppler-utils
+- ImageMagick 설치
 
--ffmpeg 설치
-sudo add-apt-repository ppa:archivematica/externals
+`sudo apt-get install imagemagick ghostscript poppler-utils`
 
-sudo apt-get update
+- ffmpeg 설치
 
-sudo apt-get install ffmpeg
+`sudo add-apt-repository ppa:archivematica/externals`
+
+`sudo apt-get update`
+
+`sudo apt-get install ffmpeg`
 
 
 ### 1.5. AtoM 설치
--AtoM 2.2.1 다운로드
-wget https://storage.accesstomemory.org/releases/atom-2.2.1.tar.gz
+- AtoM 2.2.1 다운로드
+`wget https://storage.accesstomemory.org/releases/atom-2.2.1.tar.gz`
 
-sudo mkdir /usr/share/nginx/atom
+`sudo mkdir /usr/share/nginx/atom`
 
-sudo tar xzf atom-2.2.1.tar.gz -C /usr/share/nginx/atom --strip 1
+`sudo tar xzf atom-2.2.1.tar.gz -C /usr/share/nginx/atom --strip 1`
 
 
 ### 1.6. 파일시스템 접근권한 설정
-sudo chown -R www-data:www-data /usr/share/nginx/atom
+`sudo chown -R www-data:www-data /usr/share/nginx/atom`
 
-sudo chmod o= /usr/share/nginx/atom
+`sudo chmod o= /usr/share/nginx/atom`
 
 
 ### 1.7. 데이터베이스 생성
-mysql -h localhost -u root -p -e "CREATE DATABASE atom CHARACTER SET utf8 COLLATE utf8_unicode_ci;"
+`mysql -h localhost -u root -p -e "CREATE DATABASE atom CHARACTER SET utf8 COLLATE utf8_unicode_ci;"`
 
-mysql -h localhost -u root -p -e "GRANT INDEX, CREATE, SELECT, INSERT, UPDATE, DELETE, ALTER, LOCK TABLES ON atom.* TO 'atom'@'localhost' IDENTIFIED BY '12345';"
+`mysql -h localhost -u root -p -e "GRANT INDEX, CREATE, SELECT, INSERT, UPDATE, DELETE, ALTER, LOCK TABLES ON atom.* TO 'atom'@'localhost' IDENTIFIED BY '12345';"`
 
 
 
