@@ -1,57 +1,56 @@
 # Week 2. AtoM 설치 및 실습
-
 **May 20, 2017**
-
 ## 1. AtoM 설치
-
 ### 설치환경
-OS : Ubuntu server 14.04 LTS 
+OS : Ubuntu server 14.04 LTS
+
 하드웨어 : 아마존 클라우드 서버 이용 - AWS EC2 1년 무료계정(Free tier)
 
+
 ### 1.1. Amazon EC2 접속 (via SSH)
--putty.exe를 실행하여 Amazon EC2 접속
--화면에 ubuntu 입력하여 로그인
+- putty.exe를 실행하여 Amazon EC2 접속
+- 화면에 ubuntu 입력하여 로그인
 
 
 ### 1.2. root 계정 설정
--root 계정 비밀번호 설정
-sudo passwd root
+- root 계정 비밀번호 설정
+`sudo passwd root`
 
--새 비밀번호 입력(2회, 패스워드를 입력할 땐 화면에 패스워드가 출력되진 않지만 비밀번호가 입력된 것임)
+- 새 비밀번호 입력(2회, 패스워드를 입력할 땐 화면에 패스워드가 출력되진 않지만 비밀번호가 입력된 것임)
 
--root계정으로 로그인(명령어 사이에 공백 유의)
-su -
+- root계정으로 로그인(명령어 사이에 공백 유의)
+`su -`
 
--기설정한 비밀번호 입력하여 로그인
+- 기설정한 비밀번호 입력하여 로그인
 
 
 ### 1.3. Ubuntu 업데이트
 -리눅스 Ubuntu 업데이트
-sudo apt-get update
+`sudo apt-get update`
 
-sudo apt-get upgrade
+`sudo apt-get upgrade`
 
 -Nano 에디터 설치
-sudo apt-get install nano
+`sudo apt-get install nano`
 
 
 ### 1.4. 각종 어플리케이션 설치
 -MySQL 설치
-sudo apt-get install mysql-server-5.5
+`sudo apt-get install mysql-server-5.5`
 
 -Java 설치
-sudo add-apt-repository ppa:webupd8team/java
+`sudo add-apt-repository ppa:webupd8team/java`
 
-sudo apt-get update
+`sudo apt-get update`
 
-sudo apt-get install oracle-java8-installer
+`sudo apt-get install oracle-java8-installer`
 
 -ElasticSearch 설치
-wget -qO - http://packages.elasticsearch.org/GPG-KEY-elasticsearch | sudo apt-key add -
+`wget -qO - http://packages.elasticsearch.org/GPG-KEY-elasticsearch | sudo apt-key add -`
 
-nano /etc/apt/sources.list
+`sudo nano /etc/apt/sources.list`
 
-deb http://packages.elasticsearch.org/elasticsearch/1.7/debian stable main
+`deb http://packages.elasticsearch.org/elasticsearch/1.7/debian stable main`
 
 
 -업데이트 및 Elasticsearch 설치
@@ -311,18 +310,5 @@ mysql -h localhost -u root -p -e "GRANT INDEX, CREATE, SELECT, INSERT, UPDATE, D
 
 
 
-
-
-
-
-
-### 
-### 
-### 
-### 
-### 
-### 
-### 
-### 
 
 ## 2. AtoM 실습
