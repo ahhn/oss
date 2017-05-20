@@ -9,6 +9,7 @@ OS : Ubuntu server 14.04 LTS
 
 ### 1.1. Amazon EC2 접속 (via SSH)
 - putty.exe를 실행하여 Amazon EC2 접속
+
 - 화면에 ubuntu 입력하여 로그인
 
 
@@ -61,6 +62,7 @@ OS : Ubuntu server 14.04 LTS
 
 
 - 업데이트 및 Elasticsearch 설치
+
 `sudo apt-get update`
 
 `sudo apt-get install elasticsearch`
@@ -96,7 +98,7 @@ OS : Ubuntu server 14.04 LTS
 빈 화면이 나타나면 아래 upstream atom {부터 복사하여 붙여넣기
 
 
-`
+``
 upstream atom {
   server unix:/var/run/php5-fpm.atom.sock;
 }
@@ -164,10 +166,11 @@ server {
 
 }
 
-`
+``
 
 
 ctrl+O (저장)
+
 ctrl+X (문서닫기)
 
 
@@ -188,7 +191,7 @@ ctrl+X (문서닫기)
 
 빈 화면이 나타나면 [atom] 서부터 "off"까지 복사하여 붙여넣기
 
-`
+``
 [atom]
 
 # The user running the application
@@ -251,7 +254,7 @@ php_admin_value[opcache.fast_shutdown] = 1
 env[ATOM_DEBUG_IP] = "10.10.10.10,127.0.0.1"
 env[ATOM_READ_ONLY] = "off"
 
-`
+``
 
 ctrl+O (저장)
 ctrl+X (문서닫기)
