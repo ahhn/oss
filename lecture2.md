@@ -8,13 +8,12 @@
 OS : Ubuntu server 14.04 LTS 
 하드웨어 : 아마존 클라우드 서버 이용 - AWS EC2 1년 무료계정(Free tier)
 
-### 
-1. Amazon EC2 접속 (via SSH)
+### 1.1. Amazon EC2 접속 (via SSH)
 -putty.exe를 실행하여 Amazon EC2 접속
 -화면에 ubuntu 입력하여 로그인
 
 
-2. root 계정 설정
+### 1.2. root 계정 설정
 -root 계정 비밀번호 설정
 sudo passwd root
 
@@ -26,7 +25,7 @@ su -
 -기설정한 비밀번호 입력하여 로그인
 
 
-3. Ubuntu 업데이트
+### 1.3. Ubuntu 업데이트
 -리눅스 Ubuntu 업데이트
 sudo apt-get update
 
@@ -36,7 +35,7 @@ sudo apt-get upgrade
 sudo apt-get install nano
 
 
-4. 각종 어플리케이션 설치
+### 1.4. 각종 어플리케이션 설치
 -MySQL 설치
 sudo apt-get install mysql-server-5.5
 
@@ -177,8 +176,7 @@ sudo nano /etc/php5/fpm/pool.d/atom.conf
 
 
 -----------------------------------------------------> 빈 화면이 나타나면 [atom] 서부터
-
-
+`
 [atom]
 
 # The user running the application
@@ -241,8 +239,7 @@ php_admin_value[opcache.fast_shutdown] = 1
 env[ATOM_DEBUG_IP] = "10.10.10.10,127.0.0.1"
 env[ATOM_READ_ONLY] = "off"
 
---------------------------------------------------------> env[ATOM_READ_ONLY] = "off" 까지 복사해서 입력
-
+`
 
 ctrl+O (저장)
 ctrl+X (문서닫기)
@@ -288,7 +285,7 @@ sudo apt-get update
 sudo apt-get install ffmpeg
 
 
-5. AtoM 설치
+### 1.5. AtoM 설치
 -AtoM 2.2.1 다운로드
 wget https://storage.accesstomemory.org/releases/atom-2.2.1.tar.gz
 
@@ -297,13 +294,13 @@ sudo mkdir /usr/share/nginx/atom
 sudo tar xzf atom-2.2.1.tar.gz -C /usr/share/nginx/atom --strip 1
 
 
-6. 파일시스템 접근권한 설정
+### 1.6. 파일시스템 접근권한 설정
 sudo chown -R www-data:www-data /usr/share/nginx/atom
 
 sudo chmod o= /usr/share/nginx/atom
 
 
-7. 데이터베이스 생성
+### 1.7. 데이터베이스 생성
 mysql -h localhost -u root -p -e "CREATE DATABASE atom CHARACTER SET utf8 COLLATE utf8_unicode_ci;"
 
 mysql -h localhost -u root -p -e "GRANT INDEX, CREATE, SELECT, INSERT, UPDATE, DELETE, ALTER, LOCK TABLES ON atom.* TO 'atom'@'localhost' IDENTIFIED BY '12345';"
