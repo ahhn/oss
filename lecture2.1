@@ -49,9 +49,9 @@ $ sudo ln -sf /etc/nginx/sites-available/atom /etc/nginx/sites-enabled/atom
 $ sudo rm /etc/nginx/sites-enabled/default
 
 Nano 에디터로 atom 문서 만들기
-$ sudo nanno /etc/nginx/sites-available/atom
+$ sudo nano /etc/nginx/sites-available/atom
 
-아래 문구 복사하여 붙여넣기
+빈 화면이 나오면, 아래 문구 복사하여 붙여넣기
 ------------------------------(여기부터 문구 )
 upstream atom {
   server unix:/run/php7.0-fpm.atom.sock;
@@ -122,7 +122,7 @@ server {
 ------------------------------(여기까지 문구 종료)
 
 ctrl+O 누르고 엔터 (저장)
-ctrl+X 누르고 엔터 (문서닫기)
+ctrl+X (문서닫기)
 
 
 NginX 재시작
@@ -143,8 +143,78 @@ $ sudo ln -sf /etc/php/7.0/mods-available/apcu-bc.ini /etc/php/7.0/fpm/conf.d/30
 $ sudo ln -sf /etc/php/7.0/mods-available/apcu-bc.ini /etc/php/7.0/cli/conf.d/30-apcu-bc.ini
 $ sudo systemctl restart php7.0-fpm
 
-$ 
-$ 
+Nano 에디터로 atom.conf 문서 수정하기
+$ sudo nano /etc/php/7.0/fpm/pool.d/atom.conf
+
+빈 화면이 나오면, 아래 문구 복사하여 붙여넣기
+------------------------------(여기부터 문구 )
+[atom]
+
+; The user running the application
+user = www-data
+group = www-data
+
+; Use UNIX sockets if Nginx and PHP-FPM are running in the same machine
+listen = /run/php7.0-fpm.atom.sock
+listen.owner = www-data
+listen.group = www-data
+listen.mode = 0600
+
+; The following directives should be tweaked based in your hardware resources
+pm = dynamic
+pm.max_children = 30
+pm.start_servers = 10
+pm.min_spare_servers = 10
+pm.max_spare_servers = 10
+pm.max_requests = 200
+
+chdir = /
+
+; Some defaults for your PHP production environment
+; A full list here: http://www.php.net/manual/en/ini.list.php
+php_admin_value[expose_php] = off
+php_admin_value[allow_url_fopen] = on
+php_admin_value[memory_limit] = 512M
+php_admin_value[max_execution_time] = 120
+php_admin_value[post_max_size] = 72M
+php_admin_value[upload_max_filesize] = 64M
+php_admin_value[max_file_uploads] = 10
+php_admin_value[cgi.fix_pathinfo] = 0
+php_admin_value[display_errors] = off
+php_admin_value[display_startup_errors] = off
+php_admin_value[html_errors] = off
+php_admin_value[session.use_only_cookies] = 0
+
+; APC
+php_admin_value[apc.enabled] = 1
+php_admin_value[apc.shm_size] = 64M
+php_admin_value[apc.num_files_hint] = 5000
+php_admin_value[apc.stat] = 0
+
+; Zend OPcache
+php_admin_value[opcache.enable] = 1
+php_admin_value[opcache.memory_consumption] = 192
+php_admin_value[opcache.interned_strings_buffer] = 16
+php_admin_value[opcache.max_accelerated_files] = 4000
+php_admin_value[opcache.validate_timestamps] = 0
+php_admin_value[opcache.fast_shutdown] = 1
+
+; This is a good place to define some environment variables, e.g. use
+; ATOM_DEBUG_IP to define a list of IP addresses with full access to the
+; debug frontend or ATOM_READ_ONLY if you want AtoM to prevent
+; authenticated users
+env[ATOM_DEBUG_IP] = "10.10.10.10,127.0.0.1"
+env[ATOM_READ_ONLY] = "off"
+------------------------------(여기까지 문구 종료)
+
+ctrl+O 누르고 엔터 (저장)
+ctrl+X (문서닫기)
+
+프로세스 매니저 활성화 및 재시작
+$ sudo systemctl enable php7.0-fpm
+$ sudo systemctl start php7.0-fpm
+
+
 $ 
 $ 
 $ 
