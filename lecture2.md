@@ -8,9 +8,9 @@ OS : Ubuntu server 14.04 LTS
 
 
 ### 설치
-[AtoM 설치 매뉴얼 :https://github.com/ahhn/oss/blob/master/resources/AWS_v1.8.pdf](https://github.com/ahhn/oss/blob/master/resources/AWS_v1.8.pdf)
+AtoM 설치 매뉴얼 : [https://github.com/ahhn/oss/blob/master/resources/AWS_v1.8.pdf](https://github.com/ahhn/oss/blob/master/resources/AWS_v1.8.pdf)
 
 
 
 ## 2. AtoM 실습
-[AtoM 튜토리얼 :https://github.com/ahhn/oss/blob/master/resources/AtoM_tutorial_v1.1.pdf](https://github.com/ahhn/oss/blob/master/resources/AtoM_tutorial_v1.1.pdf)
+AtoM 튜토리얼 : [https://github.com/ahhn/oss/blob/master/resources/AtoM_tutorial_v1.1.pdf](https://github.com/ahhn/oss/blob/master/resources/AtoM_tutorial_v1.1.pdf)
