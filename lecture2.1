@@ -1,40 +1,148 @@
 #AtoM 2.3.1 설치
 
+##(참고) Putty 터미널에서 붙여넣기
+Putty 터미널에서 복사한 명령어를 붙여넣을 때는 마우스 오른쪽 키 클릭
+
+
+##root 계정 만들기
+$ sudo passwd root
+새 비밀번호 입력 후 엔터
+새 비밀번호 재입력 후 엔터
+(비밀번호를 입력할 땐 화면에 패스워드가 출력되진 않지만 비밀번호가 입력된 것임)
+
+root계정으로 로그인
+$ su -
+
+앞에서 설정한 root계정 비밀번호 입력 후 엔터
+
+
+##Ubuntu 업데이트
+$ sudo apt-get update
+$ sudo apt-get upgrade
+
+##Nano 에디터 설치
+$ sudo apt-get install nano
+
+
 ##Ubuntu 패키지 저장소 업데이트
 $ sudo apt install percona-server-server-5.6
 
+
 ##MySQL
 $ sudo apt install percona-server-server-5.6
-
 MySQL 비밀번호 2회 입력
+
 
 ##ELASTICSEARCH 
 $ sudo apt install openjdk-8-jre-headless software-properties-common
 $ wget -qO - http://packages.elasticsearch.org/GPG-KEY-elasticsearch | sudo apt-key add -
 $ sudo add-apt-repository "deb http://packages.elasticsearch.org/elasticsearch/1.7/debian stable main"
 $ sudo apt update
-
 $ sudo apt install elasticsearch
-
 $ sudo systemctl enable elasticsearch
-
 $ sudo systemctl start elasticsearch
 
-##WEB SERVER
-$ 
-$ 
-$ 
-$ 
-$ 
-$ 
-$ 
-$ 
-$ 
-$ 
-$ 
-$ 
-$ 
-$ 
+##WEB SERVER (NginX)
+$ sudo apt install nginx
+$ sudo touch /etc/nginx/sites-available/atom
+$ sudo ln -sf /etc/nginx/sites-available/atom /etc/nginx/sites-enabled/atom
+$ sudo rm /etc/nginx/sites-enabled/default
+
+Nano 에디터로 atom 문서 만들기
+$ sudo nanno /etc/nginx/sites-available/atom
+
+아래 문구 복사하여 붙여넣기
+------------------------------(여기부터 문구 )
+upstream atom {
+  server unix:/run/php7.0-fpm.atom.sock;
+}
+
+server {
+
+  listen 80;
+  root /usr/share/nginx/atom;
+
+  # http://wiki.nginx.org/HttpCoreModule#server_name
+  # _ means catch any, but it's better if you replace this with your server
+  # name, e.g. archives.foobar.com
+  server_name _;
+
+  client_max_body_size 72M;
+
+  # http://wiki.nginx.org/HttpCoreModule#try_files
+  location / {
+    try_files $uri /index.php?$args;
+  }
+
+  location ~ /\. {
+    deny all;
+    return 404;
+  }
+
+  location ~* (\.yml|\.ini|\.tmpl)$ {
+    deny all;
+    return 404;
+  }
+
+  location ~* /(?:uploads|files)/.*\.php$ {
+    deny all;
+    return 404;
+  }
+
+  location ~* /uploads/r/(.*)/conf/ {
+
+  }
+
+  location ~* ^/uploads/r/(.*)$ {
+    include /etc/nginx/fastcgi_params;
+    set $index /index.php;
+    fastcgi_param SCRIPT_FILENAME $document_root$index;
+    fastcgi_param SCRIPT_NAME $index;
+    fastcgi_pass atom;
+  }
+
+  location ~ ^/private/(.*)$ {
+    internal;
+    alias /usr/share/nginx/atom/$1;
+  }
+
+  location ~ ^/(index|qubit_dev)\.php(/|$) {
+    include /etc/nginx/fastcgi_params;
+    fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
+    fastcgi_split_path_info ^(.+\.php)(/.*)$;
+    fastcgi_pass atom;
+  }
+
+  location ~* \.php$ {
+    deny all;
+    return 404;
+  }
+
+}
+------------------------------(여기까지 문구 종료)
+
+ctrl+O 누르고 엔터 (저장)
+ctrl+X 누르고 엔터 (문서닫기)
+
+
+NginX 재시작
+$ sudo systemctl enable nginx
+$ sudo systemctl reload nginx
+
+
+##PHP
+$ sudo apt install php7.0-cli php7.0-curl php7.0-json php7.0-ldap php7.0-mysql php7.0-opcache php7.0-readline php7.0-xml php7.0-fpm php7.0-mbstring php7.0-mcrypt php7.0-xsl php7.0-zip php-memcache php-apcu
+$ sudo apt install php-dev
+$ sudo pecl install apcu_bc-beta
+
+설치 도중 아래 문구 나오면 엔터 키 입력
+Enable internal debugging in APCu [no]: 엔터
+
+$ echo "extension=apc.so" | sudo tee /etc/php/7.0/mods-available/apcu-bc.ini
+$ sudo ln -sf /etc/php/7.0/mods-available/apcu-bc.ini /etc/php/7.0/fpm/conf.d/30-apcu-bc.ini
+$ sudo ln -sf /etc/php/7.0/mods-available/apcu-bc.ini /etc/php/7.0/cli/conf.d/30-apcu-bc.ini
+$ sudo systemctl restart php7.0-fpm
+
 $ 
 $ 
 $ 
