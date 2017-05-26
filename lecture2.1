@@ -1,10 +1,10 @@
-#AtoM 2.3.1 설치
+# AtoM 2.3.1 설치
 
-##(참고) Putty 터미널에서 붙여넣기
+## (참고) Putty 터미널에서 붙여넣기
 Putty 터미널에서 복사한 명령어를 붙여넣을 때는 마우스 오른쪽 키 클릭
 
 
-##root 계정 만들기
+## root 계정 만들기
 $ sudo passwd root
 새 비밀번호 입력 후 엔터
 새 비밀번호 재입력 후 엔터
@@ -16,24 +16,25 @@ $ su -
 앞에서 설정한 root계정 비밀번호 입력 후 엔터
 
 
-##Ubuntu 업데이트
+## Ubuntu 업데이트
 $ sudo apt-get update
 $ sudo apt-get upgrade
 
-##Nano 에디터 설치
+## Nano 에디터 설치
 $ sudo apt-get install nano
 
 
-##Ubuntu 패키지 저장소 업데이트
+## Ubuntu 패키지 저장소 업데이트
 $ sudo apt install percona-server-server-5.6
 
 
-##MySQL
+## MySQL
 $ sudo apt install percona-server-server-5.6
 MySQL 비밀번호 2회 입력
+(예: 12345678)
 
 
-##ELASTICSEARCH 
+## ELASTICSEARCH 
 $ sudo apt install openjdk-8-jre-headless software-properties-common
 $ wget -qO - http://packages.elasticsearch.org/GPG-KEY-elasticsearch | sudo apt-key add -
 $ sudo add-apt-repository "deb http://packages.elasticsearch.org/elasticsearch/1.7/debian stable main"
@@ -42,7 +43,7 @@ $ sudo apt install elasticsearch
 $ sudo systemctl enable elasticsearch
 $ sudo systemctl start elasticsearch
 
-##WEB SERVER (NginX)
+## WEB SERVER (NginX)
 $ sudo apt install nginx
 $ sudo touch /etc/nginx/sites-available/atom
 $ sudo ln -sf /etc/nginx/sites-available/atom /etc/nginx/sites-enabled/atom
@@ -52,7 +53,7 @@ Nano 에디터로 atom 문서 만들기
 $ sudo nano /etc/nginx/sites-available/atom
 
 빈 화면이 나오면, 아래 문구 복사하여 붙여넣기
-------------------------------(여기부터 문구 )
+------------------------------(여기부터 문구 시작)
 upstream atom {
   server unix:/run/php7.0-fpm.atom.sock;
 }
@@ -130,7 +131,7 @@ $ sudo systemctl enable nginx
 $ sudo systemctl reload nginx
 
 
-##PHP
+## PHP
 $ sudo apt install php7.0-cli php7.0-curl php7.0-json php7.0-ldap php7.0-mysql php7.0-opcache php7.0-readline php7.0-xml php7.0-fpm php7.0-mbstring php7.0-mcrypt php7.0-xsl php7.0-zip php-memcache php-apcu
 $ sudo apt install php-dev
 $ sudo pecl install apcu_bc-beta
@@ -147,7 +148,7 @@ Nano 에디터로 atom.conf 문서 수정하기
 $ sudo nano /etc/php/7.0/fpm/pool.d/atom.conf
 
 빈 화면이 나오면, 아래 문구 복사하여 붙여넣기
-------------------------------(여기부터 문구 )
+------------------------------(여기부터 문구 시작)
 [atom]
 
 ; The user running the application
@@ -215,47 +216,106 @@ $ sudo systemctl enable php7.0-fpm
 $ sudo systemctl start php7.0-fpm
 
 
-$ 
-$ 
-$ 
-$ 
-$ 
-$ 
-$ 
-$ 
-$ 
-$ 
-$ 
-$ 
-$ 
-$ 
-$ 
-$ 
-$ 
-$ 
-$ 
-$ 
-$ 
-$ 
-$ 
-$ 
-$ 
-$ 
-$ 
-$ 
-$ 
-$ 
-$ 
-$ 
-$ 
-$ 
-$ 
-$ 
-$ 
-$ 
-$ 
-$ 
-$ 
-$ 
-$ 
+## GEARMAN JOB SERVER
+$ sudo apt install gearman-job-server
 
+
+## 기타 패키지
+FOP 설치
+$ sudo apt install --no-install-recommends fop libsaxon-java
+
+ImggeMagick 설치
+$ sudo apt install imagemagick ghostscript poppler-utils ffmpeg
+
+
+## AtoM 다운로드
+$ wget https://storage.accesstomemory.org/releases/atom-2.3.1.tar.gz
+$ sudo mkdir /usr/share/nginx/atom
+$ sudo tar xzf atom-2.3.1.tar.gz -C /usr/share/nginx/atom --strip 1
+
+
+## AtoM 파일시스템 접근권한 설정
+$ sudo chown -R www-data:www-data /usr/share/nginx/atom
+$ sudo chmod o= /usr/share/nginx/atom
+
+
+## AtoM 데이터베이스 생성
+$ mysql -h localhost -u root -p -e "CREATE DATABASE atom CHARACTER SET utf8 COLLATE utf8_unicode_ci;"
+
+Enter password: MySql 설치할 때 설정한 비밀번호 입력 후 엔터
+(예: 12345678)
+
+
+## AtoM 웹 인스톨러 실행
+웹 브라우저 실행(Internet Explorer 또는 Chrome 등)
+
+주소 창에 사이트 URL 입력 
+(AWS 로그인 후 EC2의 'IPv4 Public IP'에 적혀있는 숫자)
+(예: 52.12.345.67)
+
+'502 bad gateway' 에러가 발생하면
+$ sudo nano /etc/php/7.0/fpm/pool.d/atom.conf
+listen.mode = 0600 --> 0660 으로 수정
+
+ctrl+O 누르고 엔터 (저장)
+ctrl+X (문서닫기)
+
+PHP-FPM 재시작
+$ service php7.0-fpm restart
+
+
+웹 브라우저 새로고침
+
+1. Check system
+'Continue'버튼 클릭
+(http://52.79.231.82/index.php/sfInstallPlugin/checkSystem)
+
+2. Configure database
+Database password 입력 (MySql 설치할 때 설정한 비밀번호)
+'Save and Continue'버튼 클릭
+(http://52.79.231.82/index.php/sfInstallPlugin/configureDatabase)
+
+3. Configure search
+'Save and Continue'버튼 클릭
+(http://52.79.231.82/index.php/sfInstallPlugin/configureSearch)
+
+4. Load data
+504 bad gateway timeout
+(http://52.79.231.82/index.php/sfInstallPlugin/loadData)
+
+Unable to open PDO connection [wrapped: SQLSTATE[HY000] [2002] No such file or directory]에러 발생 시
+$ sudo nano /usr/lib/systemd/system/atom-worker.service
+
+------------------------------(여기부터 문구 시작)
+[Unit]
+Description=AtoM worker
+After=mysql.target
+
+[Install]
+WantedBy=multi-user.target
+
+[Service]
+Type=simple
+User=www-data
+Group=www-data
+WorkingDirectory=/usr/share/nginx/atom
+ExecStart=/usr/bin/php -d memory_limit=-1 -d error_reporting="E_ALL" symfony jobs:worker
+ExecStop=/bin/kill -s TERM $MAINPID
+Restart=no
+------------------------------(여기까지 문구 종료)
+
+ctrl+O 누르고 엔터 (저장)
+ctrl+X (문서닫기)
+
+systemd 리로드
+$ sudo systemctl daemon-reload
+
+
+$ sudo service mysql stop 
+$ sudo /etc/init.d/apparmor reload
+$ sudo service mysql start
+$ mysql -u root -p
+mysql> 
+
+
+5. Configure site
