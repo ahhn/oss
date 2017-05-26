@@ -1,0 +1,377 @@
+# AtoM 2.3.1 설치 (Ubuntu 14.04 LTS)
+
+## (참고) Putty 터미널에서 붙여넣기
+Putty 터미널에서 복사한 명령어를 붙여넣을 때는 마우스 오른쪽 키 클릭
+
+
+1. Amazon EC2 접속 (via SSH)
+
+ SSH 클라이언트 실행 (PuTTY 등)
+putty.exe 더블클릭
+
+ Session > Host Name 에 IP 입력 >  Port: 22 입력
+ Connection > SSH > Auth > Browse 버튼 클릭 > ppk파일 선택 > 하단 Open 버튼 클릭 > ‘예’ 버튼 클릭
+ Login as : ubuntu > 엔터
+ Amazon EC2 접속 완료
+
+
+
+2. root 계정 설정
+
+ root 계정 비밀번호 설정 ($ 기호 옆에 아래 문장을 복사하여 붙여넣기 후 엔터)
+sudo passwd root
+
+새 비밀번호 입력 (2회) - ** (주의) 패스워드를 입력해도 화면 상에 아무 것도 안 나오지만 그냥 패스워드 입력하고 엔터)
+******
+
+root계정으로 로그인
+$ su -
+
+비밀번호 입력
+******
+
+
+
+3. Ubuntu 업데이트
+
+ 리눅스 Ubuntu 업데이트
+
+우분투 OS의 공식 패키지 저장소에 apache용 개인 패키지 저장소 추가 및 업데이트 
+$ sudo apt-get install python-software-properties 
+$ sudo apt-add-repository ppa:ondrej/apache2 
+$ sudo apt-get update 
+
+Nano 에디터 설치 (리눅스 초보자의 경우  vi 에디터 보다 사용이 편리함)
+$ sudo apt-get install nano
+
+
+
+
+4. 각종 어플리케이션 설치
+
+ Apache 설치
+$ sudo apt-get install apache2
+
+ PHP 설치
+$ sudo apt-get install php5
+
+ MySQL 설치
+$ sudo apt-get install mysql-server-5.5
+$ sudo apt-get install php5-mysql
+
+패스워드 입력하라고 나오면 패스워드(1번에서 생성한 root계정 패스워드) 입력하고 엔터 x 2회
+
+ Apache에서 PHP5-FPM을 사용하기 위한 추가 모듈 설치 
+$ sudo apt-get install libapache2-mod-fastcgi php5-fpm 
+
+ nano 에디터로 PHP5-FPM용 환경설정 파일 만들기 
+$ sudo nano /etc/apache2/conf-available/php5-fpm.conf 
+
+빈 화면이 나오면, 아래 문구 복사하여 붙여넣기
+------------------------------(여기부터 문구 시작)
+<IfModule mod_fastcgi.c>
+AddHandler php5-fcgi .php
+Action php5-fcgi /php5-fcgi
+Alias /php5-fcgi /usr/lib/cgi-bin/php5-fcgi
+FastCgiExternalServer /usr/lib/cgi-bin/php5-fcgi -socket /var/run/php5-fpm.sock -pass-header Authorization <Directory /usr/lib/cgi-bin> 
+Require all granted </Directory> 
+</IfModule> 
+------------------------------(여기까지 문구 종료)
+
+ctrl+O 누르고 엔터 (저장)
+ctrl+X (문서닫기)
+
+Apache에서 PHP5-FPM의 모듈 실행을 위한 명령어
+$ sudo a2enmod actions fastcgi alias 
+$ sudo a2dismod mpm_prefork php5 
+$ sudo a2enconf php5-fpm
+$ sudo a2enmod mpm_event
+
+ PHP5-FPM의 기본 pool 환경 설정 파일 열기 
+$ sudo nano /etc/php5/fpm/pool.d/www.conf
+
+아래 문구 붙여넣기
+------------------------------(여기부터 문구 시작)
+[www] 
+user = www-data 
+group = www-data 
+
+listen = /var/run/php5-fpm.sock 
+listen.owner = www-data 
+listen.group = www-data 
+listen.mode = 0600 
+
+pm = dynamic 
+pm.max_children = 30 
+pm.start_servers = 10 
+pm.min_spare_servers = 10 
+pm.max_spare_servers = 10 
+pm.max_requests = 200 
+
+chdir = /
+php_admin_value[memory_limit] = 512M 
+php_admin_value[max_execution_time] = 300 
+php_admin_value[post_max_size] = 72M 
+php_admin_value[upload_max_filesize] = 64M 
+php_admin_value[max_file_uploads] = 10 
+
+php_admin_value[apc.enabled] = 1 
+php_admin_value[apc.shm_size] = 64M 
+php_admin_value[apc.num_files_hint] = 5000 
+php_admin_value[apc.stat] = 0 
+
+php_admin_value[opcache.enable] = 1 
+php_admin_value[opcache.enable_cli] = 0 
+php_admin_value[opcache.memory_consumption] = 192 
+php_admin_value[opcache.interned_strings_buffer] = 16 
+php_admin_value[opcache.max_accelerated_files] = 4000 
+php_admin_value[opcache.validate_timestamps] = 0 
+php_admin_value[opcache.fast_shutdown] = 1 
+
+env[ATOM_DEBUG_IP] = "10.10.10.10,127.0.0.1" 
+env[ATOM_READ_ONLY] = "off" 
+------------------------------(여기까지 문구 종료)
+
+ctrl+O 누르고 엔터 (저장)
+ctrl+X (문서닫기)
+
+ Apache 서비스 및 PHP5-FPM 서비스 재실행 
+$ sudo service apache2 restart 
+$ sudo service php5-fpm restart 
+
+ Apache의 mpm 설정이 mpm-prefork 방식에서 mpm-event 방식으로 변경되었는지 확인 (아래 명령어 실행시 결과가 Server MPM : event 로 나오면 성공)
+$ apachectl -V | grep -i mpm 
+
+ Apache 기타 모듈 설치
+$ sudo apt-get install libapache2-mod-php5 libapache2-mod-xsendfile
+
+ 설치한 xsendfile 모듈 실행 
+$ sudo a2enmod rewrite xsendfile
+
+ PHP 추가모듈 설치
+$ sudo apt-get install php5-cli php5-curl php5-mysql php5-xsl php5-json php5-ldap php-apc 
+
+ 사용 중인 운영체제가 Ubuntu 14.04일 경우 아래 추가 모듈도 설치
+$ sudo apt-get install php5-readline 
+
+ JAVA 구동환경 설치
+$ sudo apt-get install openjdk-7-jre-headless 
+$ sudo apt-get update 
+
+ Elasticsearch의 공식 패키지 저장소의 공개 사인키 다운로드 및 apt-key 추가 
+$ wget -qO - http://packages.elasticsearch.org/GPG-KEY-elasticsearch | sudo apt-key add -
+
+ nano 에디터로 우분투 OS 공식 패키지 저장소 리스트 파일 열기 
+$ sudo nano /etc/apt/sources.list 
+
+아래 문구 붙여넣기
+------------------------------(여기부터 문구 시작)
+deb http://packages.elasticsearch.org/elasticsearch/1.7/debian stable main 
+------------------------------(여기까지 문구 종료)
+
+ctrl+O 누르고 엔터 (저장)
+ctrl+X (문서닫기)
+
+
+ 시스템 업데이트 명령어로 우분투 OS의 공식 패키지 저장소 리스트 갱신 
+$ sudo apt-get update 
+
+ ElasticSearch 검색엔진 설치
+$ sudo apt-get install elasticsearch sudo update-rc.d elasticsearch defaults 95 10 
+
+ ElasticSearch 검색엔진 서비스 재시작
+$ sudo /etc/init.d/elasticsearch start 
+
+ Gearman JOB Server(작업 스케쥴러) 설치
+$ sudo apt-get install gearman-job-server
+
+ nano 에디터로 AtoM용 작업 스케쥴러 설정 파일 열기 
+$ sudo nano /etc/init/atom-worker.conf 
+
+ 아래 문구 붙여넣기
+------------------------------(여기부터 문구 시작)
+description "AtoM worker (gearmand) upstart service" 
+
+start on (started mysql) 
+stop on runlevel [016] 
+
+respawn
+respawn limit 5 10 
+
+env LOCATION=/var/www/atom
+env LOGFILE=/var/www/atom/log/atom-worker.log 
+
+setuid www-data 
+setgid www-data 
+
+script 
+
+php \
+-d memory_limit=-1 \
+-d error_reporting="E_ALL" \
+${LOCATION}/symfony jobs:worker >> ${LOGFILE} 2>&1 
+
+end script 
+------------------------------(여기까지 문구 종료)
+
+ctrl+O 누르고 엔터 (저장)
+ctrl+X (문서닫기)
+
+ atom-worker 시작 명령어 
+$ sudo start atom-worker 
+
+ atom-worker 종료 명령어
+$ sudo stop atom-worker 
+
+ atom-worker 재시작 명령어
+$ sudo restart atom-worker 
+
+ atom-worker 구동상태 체크 명령어
+$ sudo status atom-worker 
+
+
+Apache FOP 설치 (PDF 검색도구 생성하려면 설치해야 함)
+$ sudo -s
+$ wget https://archive.apache.org/dist/xmlgraphics/fop/binaries/fop-2.1-bin.tar.gz
+$ tar -zxvf fop-2.1-bin.tar.gz
+$ rm fop-2.1-bin.tar.gz
+$ mv fop-2.1 /usr/share
+$ ln -s /usr/share/fop-2.1/fop /usr/bin/fop
+$ echo 'FOP_HOME="/usr/share/fop-2.1"' >> /etc/environmen
+$ exit
+
+
+ ImageMagick, GhostScript, Poppler-utils 설치 (JPEG, PDF 문서 열람용 사본 및 썸네일 생성)
+$ sudo apt-get install imagemagick ghostscript poppler-utils
+
+
+
+
+5. AtoM 다운로드
+
+AtoM 2.3.1 다운로드
+$ wget https://storage.accesstomemory.org/releases/atom-2.3.1.tar.gz
+
+atom 전용 웹디렉토리 생성(가상호스트 디렉토리 생성)
+$ sudo mkdir /var/www/atom
+
+gz 압축파일을 디렉토리에 풀기
+$ sudo tar xzf atom-2.3.1.tar.gz -C /var/www/atom --strip 1 
+
+
+
+
+6. AtoM 디렉토리/파일의 소유권 및 접근권한 설정
+
+ AtoM 디렉토리/파일의 소유자 권한 및 그룹 설정 
+$ sudo chown -R www-data:www-data /var/www/atom
+
+ AtoM 디렉토리/파일의 외부 사용자(others) 접근권한 제한 
+$ sudo chmod o= /var/www/atom
+
+
+
+
+7. AtoM 데이터베이스 생성 및 DB 환경설정
+
+ AtoM 디렉토리/파일의 외부 사용자(others) 접근권한 제한 
+$ mysql -u root -p;
+
+MySql 비밀번호 입력 후 엔터
+
+ AtoM용 데이터베이스 생성
+$ create database atom character set utf8 collate utf8_unicode_ci; 
+
+$ flush privileges;
+
+$ exit
+
+ MySQL 서비스 재시작
+$ sudo service mysql restart
+
+
+
+
+8. Apache에서 AtoM 가상호스트 사용 및 환경 설정
+
+ nano 에디터로 Apache 가상호스트(Virtual Host) 환경 설정 파일 열기 
+$ sudo nano /etc/apache2/sites-available/000-default.conf
+
+ 기존의 <VirtualHost *:80> 라인 부터 </VirtualHost> 라인은 모두 삭제하고 아래 문구만 새로 추가 
+------------------------------(여기부터 문구 시작)
+<VirtualHost *:80>
+DocumentRoot /var/www/atom
+RewriteEngine On
+RewriteRule ^/uploads/r/([^/]*)/conf/(.*)$ /var/www/atom/uploads/r/$1/conf/$2 [L] 
+RewriteRule ^/uploads/(.*)$ /var/www/atom/uploads/$1 [L]
+<LocationMatch ^/uploads> 
+XSendFile On
+XSendFilePath /var/www/atom/uploads SetEnv ATOM_XSENDFILE 1 
+</LocationMatch> 
+</VirtualHost> 
+------------------------------(여기까지 문구 종료)
+
+ctrl+O 누르고 엔터 (저장)
+ctrl+X (문서닫기)
+
+ Apache 웹서비스 재시작
+$ sudo /etc/init.d/apache2 restart
+
+
+
+9. 웹 인스톨러 실행
+
+웹 브라우저를 열어 주소창에 http://서버주소 등의 주소를 입력하여 접속하면, AtoM이 웹 인스톨러를 자동으로 실행함 (AWS EC2 의 경우 IPv4 Public IP 주소를 입력(ex. http://52.79.88.199)
+
+1. Check system 
+Continue 버튼 클릭
+
+2. Configure database 
+
+Database name: atom
+Database username: root
+Database password: 12345678
+
+Save and continue버튼 클릭
+
+3. Configure search
+
+Search host: localhost
+Search port: 9200
+Search index: atom
+
+Save and Continue 버튼 클릭
+
+4. Load data
+5. Configure site
+또한, 나머지 필드들도 필요에 따라 작성함
+Site title : 사이트명
+Site description : 사이트 설명문구
+Site base URL : 사이트 주소
+Username : 사용자 이름
+E-mail address : 사용자 이메일
+Password : 패스워드
+
+ Save and continue 버튼 클릭
+
+설치 완료
+
+[참고]
+이 단계에서 ‘500 | Internal Server error | sfInitialization Exception’ 에러 발생시 해당 웹주소 뒤에 다음의 URL 을 입력하면 설치 화면이 나타남. 
+뒤에 빨간색으로 표시된 URL만 붙여주시면 됩니다.
+
+http://서버주소/index.php/sfInstallPlugin/checkSystem
+
+
+your new site 링크 클릭
+
+
+
+
+9. AtoM 실행
+웹 브라우저에 AWS EC2의 Public IP 를 입력하여 AtoM 사이트 접속 (ex. http://52.79.88.199)
+관리자(admin) 계정으로 자동 로그인됨
+다음 번 사이트 접속 시 설치할 때 설정한 관리자 계정(이메일, 패스워드)로 로그인
+
+
+
