@@ -8,7 +8,7 @@ OS : Ubuntu server 14.04 LTS
 
 
 ### 설치
-AtoM 설치 매뉴얼 : [https://github.com/ahhn/oss/blob/master/resources/AWS_v1.8.pdf](https://github.com/ahhn/oss/blob/master/resources/AWS_v1.8.pdf)
+AtoM 설치 매뉴얼 : [https://github.com/ahhn/oss/blob/master/resources/Youtube_atom_install.pdf](https://github.com/ahhn/oss/blob/master/resources/Youtube_atom_install.pdf)
 
 
 
