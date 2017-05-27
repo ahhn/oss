@@ -14,3 +14,21 @@ AtoM 설치 매뉴얼 : [https://github.com/ahhn/oss/blob/master/resources/AWS_v
 
 ## 2. AtoM 실습
 AtoM 튜토리얼 : [https://github.com/ahhn/oss/blob/master/resources/AtoM_tutorial_v1.1.pdf](https://github.com/ahhn/oss/blob/master/resources/AtoM_tutorial_v1.1.pdf)
+
+### 기본 설정
+- AtoM 인터페이스 둘러보기
+- 한국어 추가
+- 이용자와 그룹 만들기
+- 메인페이지 소개글 작성
+
+### 콘텐츠 등록
+- 입수기록(Accession records) 등록
+- 기록물 계층구조 정하기
+- 기록물 등록 : ISAD(G)
+- 입수기록과 연결하기
+- 디지털 객체 업로드
+- 전거레코드 등록 : ISAAR(CPF)
+- 기록물소장기관 등록 : ISDIAH
+- 보존서가 연결하기
+- 분류체계 만들기
+- 리포트 생성
