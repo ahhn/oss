@@ -32,3 +32,14 @@ AtoM 튜토리얼 : [https://github.com/ahhn/oss/blob/master/resources/AtoM_tuto
 - 보존서가 연결하기
 - 분류체계 만들기
 - 리포트 생성
+
+
+# 코드 수정
+
+<IfModule mod_fastcgi.c>
+AddHandler php5-fcgi .php
+Action php5-fcgi /php5-fcgi
+Alias /php5-fcgi /usr/lib/cgi-bin/php5-fcgi
+FastCgiExternalServer /usr/lib/cgi-bin/php5-fcgi -socket /var/run/php5-fpm.sock -pass-header Authorization <Directory /usr/lib/cgi-bin>
+Require all granted </Directory>
+</IfModule>
