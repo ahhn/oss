@@ -9,8 +9,7 @@ OS : Ubuntu server 14.04 LTS
 
 ### 설치
 AtoM 설치 매뉴얼 : [https://github.com/ahhn/oss/blob/master/resources/Youtube_atom_install.pdf](https://github.com/ahhn/oss/blob/master/resources/Youtube_atom_install.pdf)
-
-
+AtoM 설치 동영상 : [https://www.youtube.com/watch?v=eaw7rN_O6LM&list=PLya-3fVEf50Zj0bfFbkRpxuwO6J9mh4Pf&index=6] (https://www.youtube.com/watch?v=eaw7rN_O6LM&list=PLya-3fVEf50Zj0bfFbkRpxuwO6J9mh4Pf&index=6)
 
 ## 2. AtoM 실습
 AtoM 튜토리얼 : [https://github.com/ahhn/oss/blob/master/resources/AtoM_tutorial_v1.1.pdf](https://github.com/ahhn/oss/blob/master/resources/AtoM_tutorial_v1.1.pdf)
@@ -34,18 +33,3 @@ AtoM 튜토리얼 : [https://github.com/ahhn/oss/blob/master/resources/AtoM_tuto
 - 리포트 생성
 
 
-# 코드 수정
-
-<IfModule mod_fastcgi.c>
-
-AddHandler php5-fcgi .php
-
-Action php5-fcgi /php5-fcgi
-
-Alias /php5-fcgi /usr/lib/cgi-bin/php5-fcgi
-
-FastCgiExternalServer /usr/lib/cgi-bin/php5-fcgi -socket /var/run/php5-fpm.sock -pass-header Authorization <Directory /usr/lib/cgi-bin>
-
-Require all granted </Directory>
-
-</IfModule>
