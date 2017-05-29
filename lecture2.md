@@ -8,11 +8,12 @@ OS : Ubuntu server 14.04 LTS
 
 
 ### 설치
-AtoM 설치 매뉴얼 : [https://github.com/ahhn/oss/blob/master/resources/Youtube_atom_install.pdf](https://github.com/ahhn/oss/blob/master/resources/Youtube_atom_install.pdf)
-AtoM 설치 동영상 : [https://www.youtube.com/watch?v=eaw7rN_O6LM&list=PLya-3fVEf50Zj0bfFbkRpxuwO6J9mh4Pf&index=6] (https://www.youtube.com/watch?v=eaw7rN_O6LM&list=PLya-3fVEf50Zj0bfFbkRpxuwO6J9mh4Pf&index=6)
+- AtoM 설치 매뉴얼 : [https://github.com/ahhn/oss/blob/master/resources/Youtube_atom_install.pdf](https://github.com/ahhn/oss/blob/master/resources/Youtube_atom_install.pdf)
+
+- AtoM 설치 동영상 : [https://www.youtube.com/watch?v=eaw7rN_O6LM&list=PLya-3fVEf50Zj0bfFbkRpxuwO6J9mh4Pf&index=6] (https://www.youtube.com/watch?v=eaw7rN_O6LM&list=PLya-3fVEf50Zj0bfFbkRpxuwO6J9mh4Pf&index=6)
 
 ## 2. AtoM 실습
-AtoM 튜토리얼 : [https://github.com/ahhn/oss/blob/master/resources/AtoM_tutorial_v1.1.pdf](https://github.com/ahhn/oss/blob/master/resources/AtoM_tutorial_v1.1.pdf)
+- AtoM 튜토리얼 : [https://github.com/ahhn/oss/blob/master/resources/AtoM_tutorial_v1.1.pdf](https://github.com/ahhn/oss/blob/master/resources/AtoM_tutorial_v1.1.pdf)
 
 ### 기본 설정
 - AtoM 인터페이스 둘러보기
