@@ -10,7 +10,7 @@ OS : Ubuntu server 14.04 LTS
 ### 설치
 아래 설치 매뉴얼과 동영상을 띄워 놓고 그대로 따라해 보세요.
 
-- AtoM 설치 매뉴얼 : [https://github.com/ahhn/oss/blob/master/resources/Youtube_atom_install.pdf](https://github.com/ahhn/oss/blob/master/resources/Youtube_atom_install.pdf)
+- AtoM 설치 매뉴얼 : [https://github.com/ahhn/oss/blob/master/resources/Youtube_atom_install_170601.pdf](https://github.com/ahhn/oss/blob/master/resources/Youtube_atom_install_170601.pdf)
 
 - AtoM 설치 동영상 : [https://www.youtube.com/watch?v=eaw7rN_O6LM&list=PLya-3fVEf50Zj0bfFbkRpxuwO6J9mh4Pf&index=6](https://www.youtube.com/watch?v=eaw7rN_O6LM&list=PLya-3fVEf50Zj0bfFbkRpxuwO6J9mh4Pf&index=6)
 
