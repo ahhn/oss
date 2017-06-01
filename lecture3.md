@@ -39,6 +39,12 @@ Youtube 영상에서는 Omeka 2.4.1 버전을 설치하는 것이니 유의하�
 - 전시글 작성
 
 
+### Omeka 관련 사이트
+- [Omeka Classic](http://omeka.org)
+- [Omeka.net](http://omeka.net)
+- [Omeka S](http://omeka.net)
+
+
 ### 참고자료
 - [AWS 아카이브시스템구축 매뉴얼 v1.9](https://github.com/ahhn/oss/blob/master/resources/AWS_v1.9.pdf)
 - [명지대 학생들이 만든 AtoM 설치 매뉴얼](https://github.com/ahhn/oss/blob/master/resources/MJU_AtoM%20%E1%84%89%E1%85%A5%E1%86%AF%E1%84%8E%E1%85%B5%20%E1%84%86%E1%85%A7%E1%86%BC%E1%84%85%E1%85%A7%E1%86%BC%E1%84%8B%E1%85%A5(20170511).txt)
