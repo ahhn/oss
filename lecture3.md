@@ -1,40 +1,42 @@
 (작성 중)
 # Week 3. Omeka 설치 및 실습
 **May 20, 2017**
+
 ## 1. Omeka 설치
 ### 설치환경
-OS : Ubuntu server 14.04 LTS
+OS : Ubuntu server 16.04 LTS
 
 하드웨어 : 아마존 클라우드 서버 이용 - AWS EC2 1년 무료계정(Free tier)
 
 
 ### 설치
-아래 설치 매뉴얼과 동영상을 띄워 놓고 그대로 따라해 보세요.
+아래 설치 매뉴얼을 띄워 놓고 그대로 따라해 보세요.
 
-- AtoM 설치 매뉴얼 : [https://github.com/ahhn/oss/blob/master/resources/Youtube_atom_install_170602.pdf](https://github.com/ahhn/oss/blob/master/resources/Youtube_atom_install_170602.pdf)
+Youtube 영상에서는 Omeka 2.4.1 버전을 설치하는 것이니 유의하세요.
 
-- AtoM 설치 동영상 : [https://www.youtube.com/watch?v=eaw7rN_O6LM&list=PLya-3fVEf50Zj0bfFbkRpxuwO6J9mh4Pf&index=6](https://www.youtube.com/watch?v=eaw7rN_O6LM&list=PLya-3fVEf50Zj0bfFbkRpxuwO6J9mh4Pf&index=6)
+- Omeka 설치 매뉴얼 : [https://github.com/ahhn/oss/blob/master/resources/Omeka_install_v2.5.pdf](https://github.com/ahhn/oss/blob/master/resources/Omeka_install_v2.5.pdf)
+
+- Omeka 설치 동영상 : [https://www.youtube.com/watch?v=4HUJtZNPtlQ&list=PLya-3fVEf50Zj0bfFbkRpxuwO6J9mh4Pf&index=1](https://www.youtube.com/watch?v=4HUJtZNPtlQ&list=PLya-3fVEf50Zj0bfFbkRpxuwO6J9mh4Pf&index=1)
 
 ## 2. AtoM 실습
 - AtoM 튜토리얼 : [https://github.com/ahhn/oss/blob/master/resources/AtoM_tutorial_v1.1.pdf](https://github.com/ahhn/oss/blob/master/resources/AtoM_tutorial_v1.1.pdf)
 
 ### 기본 설정
-- AtoM 인터페이스 둘러보기
-- 한국어 추가
-- 이용자와 그룹 만들기
-- 메인페이지 소개글 작성
+- Omeka 인터페이스 둘러보기
+- 이용자 추가
+- 테마 변경
+- 플러그인 설치
 
-### 콘텐츠 등록
-- 입수기록(Accession records) 등록
-- 기록물 계층구조 정하기
-- 기록물 등록 : ISAD(G)
-- 입수기록과 연결하기
-- 디지털 객체 업로드
-- 전거레코드 등록 : ISAAR(CPF)
-- 기록물소장기관 등록 : ISDIAH
-- 보존서가 연결하기
-- 분류체계 만들기
-- 리포트 생성
+### 기록물 등록하기
+- 컬렉션 만들기
+- 기록물 목록 등록 
+- 기록물 파일 등록
+- 컬렉션과 연결하기
+
+### 온라인 전시 만들기
+- 전시 페이지 만들기
+- 기록물 연결
+- 전시글 작성
 
 
 ### 참고자료
