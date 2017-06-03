@@ -19,6 +19,9 @@ Youtube 영상에서는 Omeka 2.4.1 버전을 설치하는 것이니 유의하�
 - Omeka 설치 동영상 : [https://www.youtube.com/watch?v=4HUJtZNPtlQ&list=PLya-3fVEf50Zj0bfFbkRpxuwO6J9mh4Pf&index=1](https://www.youtube.com/watch?v=4HUJtZNPtlQ&list=PLya-3fVEf50Zj0bfFbkRpxuwO6J9mh4Pf&index=1)
 
 ## 2. Omeka 실습
+
+- 샘플 기록물 : [https://github.com/ahhn/oss/tree/master/sample](https://github.com/ahhn/oss/tree/master/sample)
+
 ### 기본 설정
 - Omeka 인터페이스 둘러보기
 - 이용자 추가
