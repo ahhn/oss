@@ -18,14 +18,13 @@ Youtube 영상에서는 Omeka 2.4.1 버전을 설치하는 것이니 유의하�
 
 - Omeka 설치 동영상 : [https://www.youtube.com/watch?v=4HUJtZNPtlQ&list=PLya-3fVEf50Zj0bfFbkRpxuwO6J9mh4Pf&index=1](https://www.youtube.com/watch?v=4HUJtZNPtlQ&list=PLya-3fVEf50Zj0bfFbkRpxuwO6J9mh4Pf&index=1)
 
-## 2. AtoM 실습
-- AtoM 튜토리얼 : [https://github.com/ahhn/oss/blob/master/resources/AtoM_tutorial_v1.1.pdf](https://github.com/ahhn/oss/blob/master/resources/AtoM_tutorial_v1.1.pdf)
-
+## 2. Omeka 실습
 ### 기본 설정
 - Omeka 인터페이스 둘러보기
 - 이용자 추가
 - 테마 변경
 - 플러그인 설치
+- Simple page 만들기
 
 ### 기록물 등록하기
 - 컬렉션 만들기
