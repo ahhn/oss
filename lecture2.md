@@ -16,6 +16,7 @@ OS : Ubuntu server 14.04 LTS
 
 ## 2. AtoM 실습
 - AtoM 튜토리얼 : [https://github.com/ahhn/oss/blob/master/resources/AtoM_tutorial_v1.1.pdf](https://github.com/ahhn/oss/blob/master/resources/AtoM_tutorial_v1.1.pdf)
+- 샘플 기록물 : [https://github.com/ahhn/oss/tree/master/sample](https://github.com/ahhn/oss/tree/master/sample)
 
 ### 기본 설정
 - AtoM 인터페이스 둘러보기
