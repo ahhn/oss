@@ -59,6 +59,7 @@
 - [AtoM 설치](https://github.com/ahhn/AtoM_UserManual_kor/blob/master/AtoM%20%E1%84%89%E1%85%A5%E1%86%AF%E1%84%8E%E1%85%B5%20%E1%84%86%E1%85%B5%E1%86%BE%20%E1%84%92%E1%85%AA%E1%86%AB%E1%84%80%E1%85%A7%E1%86%BC%E1%84%89%E1%85%A5%E1%86%AF%E1%84%8C%E1%85%A5%E1%86%BC(%E1%84%8B%E1%85%A1%E1%84%8F%E1%85%A1%E1%84%8B%E1%85%B5%E1%84%87%E1%85%B3%E1%84%85%E1%85%A2%E1%86%B8-%E1%84%8B%E1%85%A9%E1%84%91%E1%85%B3%E1%86%AB%E1%84%89%E1%85%A9%E1%84%89%E1%85%B3%E1%84%8B%E1%85%A7%E1%86%AB%E1%84%80%E1%85%AE-20170430)(%E1%84%87%E1%85%A2%E1%84%91%E1%85%A9%E1%84%8B%E1%85%AD%E1%86%BC)(mpm-event%E1%84%8B%E1%85%AA%20php5-fpm%E1%84%87%E1%85%A5%E1%84%8C%E1%85%A7%E1%86%AB%E1%84%8B%E1%85%AD%E1%86%BC).pdf)
 - [Omeka 설치](http://osasf.net/uploads/FileUpload/dc/35fc351c736a808dde5c9bff895dd8.pdf)
 - [AWS EC2 웹서버에 아카이브 만들기-종합매뉴얼](https://github.com/ahhn/oss/blob/master/resources/AWS_v1.9.pdf)
+- [Ubuntu 루트 관리자 계정 설정](http://osasf.net/discussion/578/%EB%A7%A4%EB%89%B4%EC%96%BC-%EC%95%84%EB%A7%88%EC%A1%B4-aws-ec2-%EC%84%9C%EB%B2%84%EC%97%90%EC%84%9C-%EC%9A%B0%EB%B6%84%ED%88%AC-os-%EB%A3%A8%ED%8A%B8-%EA%B4%80%EB%A6%AC%EC%9E%90-%EA%B3%84%EC%A0%95-%EB%A7%8C%EB%93%A4%EA%B8%B0/p1)
 
 
 
@@ -116,9 +117,9 @@
 
 ## 4. 과제 안내
 
-- AtoM과 Omeka 중 하나를 선택하여 설치하고 기록물 등록/기술하기
+- AtoM과 Omeka를 설치하고 기록물 등록/기술하기
 
-- GitHub 리포지터리에 AtoM과 Omeka의 소개 또는 이용방법을 작성하고 오픈소스 라이선스로 공개하기
+- GitHub 리포지터리에 자신의 AtoM과 Omeka 사이트를 소개하고 오픈소스 라이선스로 공개하기
 
 - 6/3(토) 과제 작성결과 발표하기
 
